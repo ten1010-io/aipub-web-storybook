@@ -1,0 +1,223 @@
+{
+  "apiVersion": "aipub.ten1010.io/v1",
+  "kind": "Workspace",
+  "metadata": {
+    "annotations": {
+      "aipub.ten1010.io/activity_trace": "false",
+      "aipub.ten1010.io/event-create": "multi-node-training.create.cc9a4133-7242-4d53-a551-19c7d02130cb",
+      "aipub.ten1010.io/event-update": "multi-node-training.update.1752140489",
+      "aipub.ten1010.io/readme": "멀노학",
+      "aipubvolume.aipub.ten1010.io/mount-workloads": "jsh-volume",
+      "aipubvolume.aipub.ten1010.io/request": "{\"jsh-volume\":\"/root/mnt\"}"
+    },
+    "creationTimestamp": "2025-07-10T09:21:06Z",
+    "finalizers": [
+      "aipub.ten1010.io/tcp-port-removal",
+      "aipub.ten1010.io/ingress-rule-removal"
+    ],
+    "generation": 2,
+    "labels": {
+      "aipub.ten1010.io/userid": "bcfde435-a278-432a-82e9-d0b3ff026955",
+      "aipub.ten1010.io/username": "soohyun"
+    },
+    "managedFields": [
+      {
+        "apiVersion": "aipub.ten1010.io/v1",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:aipub.ten1010.io/activity_trace": {},
+              "f:aipub.ten1010.io/readme": {}
+            }
+          },
+          "f:spec": {
+            ".": {},
+            "f:ports": {},
+            "f:replicas": {},
+            "f:ssh": {
+              ".": {},
+              "f:publicKey": {}
+            },
+            "f:suspend": {},
+            "f:template": {
+              ".": {},
+              "f:spec": {}
+            }
+          }
+        },
+        "manager": "Mozilla",
+        "operation": "Update",
+        "time": "2025-07-10T09:21:06Z"
+      },
+      {
+        "apiVersion": "aipub.ten1010.io/v1",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              "f:aipubvolume.aipub.ten1010.io/request": {}
+            }
+          },
+          "f:spec": {
+            "f:template": {
+              "f:spec": {
+                "f:containers": {}
+              }
+            }
+          }
+        },
+        "manager": "kubectl-edit",
+        "operation": "Update",
+        "time": "2025-07-10T09:40:08Z"
+      },
+      {
+        "apiVersion": "aipub.ten1010.io/v1",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              "f:aipub.ten1010.io/event-create": {},
+              "f:aipub.ten1010.io/event-update": {},
+              "f:aipubvolume.aipub.ten1010.io/mount-workloads": {}
+            },
+            "f:finalizers": {
+              ".": {},
+              "v:\"aipub.ten1010.io/ingress-rule-removal\"": {},
+              "v:\"aipub.ten1010.io/tcp-port-removal\"": {}
+            }
+          }
+        },
+        "manager": "OpenAPI-Generator",
+        "operation": "Update",
+        "time": "2025-07-10T09:41:47Z"
+      },
+      {
+        "apiVersion": "aipub.ten1010.io/v1",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:status": {
+            "f:pods": {
+              ".": {},
+              "f:pending": {},
+              "f:progressing": {},
+              "f:ready": {}
+            },
+            "f:readyCondition": {
+              "f:status": {},
+              "f:timestamp": {}
+            },
+            "f:sshEndpoint": {
+              ".": {},
+              "f:host": {},
+              "f:port": {},
+              "f:user": {}
+            }
+          }
+        },
+        "manager": "OpenAPI-Generator",
+        "operation": "Update",
+        "subresource": "status",
+        "time": "2025-07-10T09:41:49Z"
+      }
+    ],
+    "name": "multi-node-training",
+    "namespace": "proj1",
+    "ownerReferences": [
+      {
+        "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+        "blockOwnerDeletion": false,
+        "controller": false,
+        "kind": "AipubUser",
+        "name": "soohyun",
+        "uid": "df05b2a1-8714-42e8-b802-fdde691b58cb"
+      }
+    ],
+    "resourceVersion": "46604264",
+    "uid": "cc9a4133-7242-4d53-a551-19c7d02130cb"
+  },
+  "spec": {
+    "ports": [],
+    "replicas": 2,
+    "ssh": {
+      "port": 64281,
+      "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC66sO5AUANooljXzy7Ex7XbIw3afIcyuKZmBDoBJuiv2Thwev/ql50zeHFT74YZ0BCBY5v2fvD4MISRgAIqMCdLzS389BXMwMRD+XC2F93zisK5JQeKn9BCu3q/JrHrR6bPfHhSial0Cairzj1gOeloTidv0AMScYdFIGZSK7lYcHUIlJ7Zhnl8PsMzbRMvPiS/F/QhUTyMmEV40Q2xF6B4d1RrBFC28/1lLh/Ufs1wics5UAh/x/7/9nW1FgkoiJES24kbZUUt8hTA6CdFrc+vmoqGPeRyQrWK0S8MAdQQPNxtluwNaynzbJecR9SBowSoYuBWRUEKTjzcOkeNLfXhh8x7obccJCoGeJND1QnLw/kTKplE4Pv/StCNoWy81OpCSPF97It5AtNOnsxuXn1gk7rHhmKS0zwkaUdAAEBqwHfqgcUu1uhafdOf8+X1R6iL1R3GBnUw9t8t7mXpdezquZoGqcJXIPizWnV2Gbomm0YLwwZllogRsqmXbE8lfk= asdfry@DESKTOP-0ES5BAA"
+    },
+    "suspend": false,
+    "template": {
+      "spec": {
+        "containers": [
+          {
+            "image": "docker.io/asdfry/train-llm:20250516",
+            "name": "multi-node-training",
+            "resources": {
+              "limits": {
+                "cpu": "3581m",
+                "memory": "27343750Ki",
+                "ten1010.io/gpu-mig-9728mb-a100-sxm4-80gb-1slice": "1",
+                "ten1010.io/resourceset-3581m-28gb-gpu-mig-9728mb-a100-sxm4-80gb-1slice": "1"
+              },
+              "requests": {
+                "cpu": "3581m",
+                "memory": "27343750Ki",
+                "ten1010.io/gpu-mig-9728mb-a100-sxm4-80gb-1slice": "1"
+              }
+            },
+            "volumeMounts": [
+              {
+                "mountPath": "/root/mnt",
+                "name": "jsh-volume-e2911fc4"
+              }
+            ]
+          }
+        ],
+        "volumes": [
+          {
+            "name": "jsh-volume-e2911fc4",
+            "persistentVolumeClaim": {
+              "claimName": "jsh-volume-e2911fc4"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "status": {
+    "pods": {
+      "pending": [],
+      "progressing": [],
+      "ready": [
+        {
+          "creationTimestamp": "2025-07-10T09:38:41+00:00",
+          "lastTerminationState": {},
+          "name": "multi-node-training-cc9a4133-1",
+          "nodeName": "pnode4.idc1.ten1010.io",
+          "restartCount": 0,
+          "terminating": false,
+          "timestamp": "2025-07-10T09:41:29.250752",
+          "uid": "53bbbd9a-eaf8-4e88-9f16-379df650b29a"
+        },
+        {
+          "creationTimestamp": "2025-07-10T09:41:24+00:00",
+          "lastTerminationState": {},
+          "name": "multi-node-training-cc9a4133-0",
+          "nodeName": "pnode4.idc1.ten1010.io",
+          "restartCount": 0,
+          "terminating": false,
+          "timestamp": "2025-07-10T09:41:49.786360",
+          "uid": "6311ff47-f4a0-4bbb-8cfa-300139980b50"
+        }
+      ]
+    },
+    "readyCondition": {
+      "status": true,
+      "timestamp": "2025-07-10T09:41:29.251080"
+    },
+    "sshEndpoint": {
+      "host": "101.202.0.12",
+      "port": 64281,
+      "user": "root"
+    }
+  }
+}

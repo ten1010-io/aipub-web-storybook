@@ -1,0 +1,23 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: string
+  labels:
+    # key: string
+# rules:
+#   - apiGroups:
+#       - ""
+#     resources:
+#       - "pods"
+#     verbs:
+#       - "get"
+#       - "list"
+#       - "watch"
+#       - "create"
+#       - "update"
+#       - "delete"
+#       - "patch"
+#       - "deletecollection"

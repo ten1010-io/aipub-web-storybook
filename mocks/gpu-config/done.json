@@ -1,0 +1,29 @@
+{
+  "apiVersion": "coaster.ten1010.io/v1alpha1",
+  "kind": "GPUConfig",
+  "metadata": {
+    "name": "vnode1.pnode6.idc1.ten1010.io",
+    "generation": 3,
+    "creationTimestamp": "2025-05-07T06:55:42Z"
+  },
+  "spec": {
+    "gpus": [
+      {
+        "gpuIndex": 0,
+        "type": "Normal"
+      }
+    ]
+  },
+  "status": {
+    "completionCondition": {
+      "status": true,
+      "timestamp": "2025-05-09T06:36:25.160278+00:00"
+    },
+    "gpus": [
+      {
+        "gpuIndex": 0,
+        "type": "Normal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+apiVersion: project.aipub.ten1010.io/v1alpha1
+kind: NodeGroup
+metadata:
+  name: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  enableNodeSelector: false
+  nodeSelector:
+    # key: value
+  nodes:
+  # - string
+  policy:
+    daemonSet:
+      allowAllDaemonSets: #boolean
+      allowedDaemonSets:
+        # - name: #string
+        #   namespace: #string
+      allowedNamespaces:
+        # - string

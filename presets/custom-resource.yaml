@@ -1,0 +1,9 @@
+apiVersion: #string # <group>/<version>
+kind: #string
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value

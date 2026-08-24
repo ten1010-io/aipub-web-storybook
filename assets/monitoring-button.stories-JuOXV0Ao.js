@@ -1,0 +1,10 @@
+import{j as o}from"./iframe-D1zcNpR6.js";import{B as v}from"./button-CqDsn7PQ.js";import{E as y}from"./external-link-Q31cljUR.js";import{A as N,S as E}from"./scroll-text-XRL4yLbe.js";import"./preload-helper-Dp1pzeXC.js";import"./index-1Mm1CGHb.js";import"./index-Dp3B9jqt.js";import"./clsx-B-dksMZM.js";import"./common-DbPgu20d.js";import"./createLucideIcon-CNO9LAd6.js";function d({icon:g=o.jsx(y,{className:"size-4"}),label:f="Monitoring",onClick:x}){return o.jsxs(v,{variant:"outline",onClick:x,children:[g,f]})}d.__docgenInfo={description:"",methods:[],displayName:"MonitoringButton",props:{icon:{required:!1,tsType:{name:"ReactNode"},description:"",defaultValue:{value:'<ExternalLink className="size-4" />',computed:!1}},label:{required:!1,tsType:{name:"string"},description:"",defaultValue:{value:"'Monitoring'",computed:!1}},onClick:{required:!0,tsType:{name:"signature",type:"function",raw:"() => void",signature:{arguments:[],return:{name:"void"}}},description:""}}};const _={title:"Organisms/MonitoringButton",component:d,parameters:{layout:"centered"},tags:["autodocs"],args:{onClick:()=>{}}},e={},r={args:{icon:o.jsx(N,{className:"size-4"})}},s={args:{icon:o.jsx(E,{className:"size-4"}),label:"Log & Event"}};var t,a,i;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:"{}",...(i=(a=e.parameters)==null?void 0:a.docs)==null?void 0:i.source}}};var n,c,m;r.parameters={...r.parameters,docs:{...(n=r.parameters)==null?void 0:n.docs,source:{originalSource:`{
+  args: {
+    icon: <Activity className="size-4" />
+  }
+}`,...(m=(c=r.parameters)==null?void 0:c.docs)==null?void 0:m.source}}};var l,u,p;s.parameters={...s.parameters,docs:{...(l=s.parameters)==null?void 0:l.docs,source:{originalSource:`{
+  args: {
+    icon: <ScrollText className="size-4" />,
+    label: 'Log & Event'
+  }
+}`,...(p=(u=s.parameters)==null?void 0:u.docs)==null?void 0:p.source}}};const q=["Default","CustomIcon","CustomLabel"];export{r as CustomIcon,s as CustomLabel,e as Default,q as __namedExportsOrder,_ as default};

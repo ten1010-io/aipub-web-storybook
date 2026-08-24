@@ -1,0 +1,63 @@
+apiVersion: aipub.ten1010.io/v1alpha1
+kind: ChainJob
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  # suspend: false
+  steps:
+    - name: #string
+      onFailure: Abort # Abort, Continue
+      job:
+        # metadata:
+        #   annotations:
+        #     key: value
+        spec:
+          # parallelism: int
+          # completions: int
+          # backoffLimit: int
+          # activeDeadlineSeconds: int
+          # ttlSecondsAfterFinished: int
+          template:
+            spec:
+              restartPolicy: Never # Never, OnFailure
+              containers:
+                - name: #string
+                  image: #string
+                  resources:
+                    requests:
+                      cpu: '1'
+                      memory: 1Gi
+                      # ten1010.io/gpu-block-63mb-a2000: "1"
+                    limits:
+                      cpu: '1'
+                      memory: 1Gi
+                      # ten1010.io/gpu-block-63mb-a2000: "1" # requests와 동일해야 함
+                  # command:
+                  #   - string
+                  # args:
+                  #   - string
+                  # env:
+                  #   - name: string
+                  #     value: string
+                  # volumeMounts:
+                  #   - name: string
+                  #     mountPath: string
+              # volumes:
+              #   - name: string
+              #     persistentVolumeClaim:
+              #       claimName: string
+    # - name: string
+    #   onFailure: Abort
+    #   job:
+    #     spec:
+    #       template:
+    #         spec:
+    #           restartPolicy: Never
+    #           containers:
+    #             - name: string
+    #               image: string

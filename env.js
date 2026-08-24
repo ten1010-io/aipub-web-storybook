@@ -1,0 +1,23 @@
+window.__ENV__ = {
+  "VITE_DEV_MODE": "false",
+  "VITE_VERSION": "v5.0.0",
+  "VITE_BRAND": "aipub",
+  "VITE_TITLE": "AIPub",
+  "VITE_API_URL": "/api",
+  "VITE_BASE_HOST": "cluster12.idc1.ten1010.io",
+  "VITE_USE_MOCK": "false",
+  "VITE_CLUSTER_TIMEZONE": "Asia/Seoul",
+  "VITE_USE_SSO": "false",
+  "VITE_LOGOUT_REDIRECT_URL": "https://local.cluster12.idc1.ten1010.io/welcome",
+  "VITE_OPENSEARCH_DASHBOARDS_URL": "/dashboards",
+  "VITE_HARBOR_URL": "https://aipub-harbor.cluster12.idc1.ten1010.io",
+  "VITE_DOCS_URL": "https://aipub.cluster12.idc1.ten1010.io/docs",
+  "VITE_MONITORING_API_URL": "/monitoring-api",
+  "VITE_JUPYTER_WORKSPACE_MOUNT_PATH": "/workspace",
+  "VITE_TRACKER_API_URL": "AIPUB_TRACKER_API_URL",
+  "VITE_TRACKER_DSN": "AIPUB_TRACKER_DSN",
+  "VITE_TRACKER_ENVIRONMENT": "AIPUB_TRACKER_ENVIRONMENT",
+  "VITE_SSH_PORT_MIN": "1024",
+  "VITE_SSH_PORT_MAX": "65535",
+  "VITE_VOLUMES": "[{\"type\":\"nfs\",\"value\":\"nfs\"},{\"type\":\"storageclass\",\"value\":\"ontap-nas\"},{\"type\":\"storageclass\",\"value\":\"vastdata-filesystem\"}]"
+};

@@ -1,0 +1,72 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: #string
+  annotations:
+    {}
+    #  key: string
+  labels:
+    {}
+    #  key: string
+  namespace: #string
+spec:
+  podSelector:
+    matchExpressions:
+#      - key: string
+#        operator: string
+#        values:
+#          - string
+    matchLabels:
+      {}
+      #  key: string
+  policyTypes:
+#    - string
+#  egress:
+#    - ports:
+#        - endPort: int
+#          port: string
+#          protocol: string
+#      to:
+#        - ipBlock:
+#            cidr: string
+#            except:
+#              - string
+#          namespaceSelector:
+#            matchExpressions:
+#              - key: string
+#                operator: string
+#                values:
+#                  - string
+#            matchLabels:  key: string
+#          podSelector:
+#            matchExpressions:
+#              - key: string
+#                operator: string
+#                values:
+#                  - string
+#            matchLabels:  key: string
+#  ingress:
+#    - from:
+#        - ipBlock:
+#            cidr: string
+#            except:
+#              - string
+#          namespaceSelector:
+#            matchExpressions:
+#              - key: string
+#                operator: string
+#                values:
+#                  - string
+#            matchLabels:  key: string
+#          podSelector:
+#            matchExpressions:
+#              - key: string
+#                operator: string
+#                values:
+#                  - string
+#            matchLabels:  key: string
+#      ports:
+#        - endPort: int
+#          port: string
+#          protocol: string
+__clone: true

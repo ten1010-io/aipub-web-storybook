@@ -1,0 +1,4 @@
+import{j as e}from"./iframe-D1zcNpR6.js";import{c as r}from"./common-DbPgu20d.js";import{T as o}from"./use-translation-DtBcGNwE.js";import{B as t}from"./badge-DKZ-o_cJ.js";const n="rounded-[10px] border-[#e6b8b8] bg-background px-2.5 py-1 font-semibold tracking-[-0.12px] text-[#c94a4a] dark:border-destructive/40 dark:text-destructive";function s({className:a}){return e.jsx(t,{variant:"outline",className:r(n,a),children:e.jsx(o,{i18nKey:"component.resource_unavailable_badge.label"})})}s.__docgenInfo={description:`quota limit 0(= 사용 금지)인 리소스에 붙는 '사용 불가' 배지.
+cpu·memory·gpu 공통 — quota 설정 테이블과 제한 정보 테이블이 같은 칩을 쓴다.
+
+k8s 리소스 상태 배지인 \`UnavailableBadge\` 와는 다른 개념이라 별도 컴포넌트다.`,methods:[],displayName:"ResourceUnavailableBadge",props:{className:{required:!1,tsType:{name:"string"},description:""}}};export{s as R};

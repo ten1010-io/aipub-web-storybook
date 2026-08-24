@@ -1,0 +1,54 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  # backoffLimit: int
+  # activeDeadlineSeconds: int
+  # ttlSecondsAfterFinished: int
+  # completionMode: string
+  # parallelism: int
+  # completions: int
+  # suspend: boolean
+  template:
+    spec:
+      #  nodeSelector:
+      #   key: value
+      # tolerations:
+      #   - key: string
+      #     operator: string
+      #     value: string
+      #     effect: string
+      # volumes:
+      #   - name: string
+      #     persistentVolumeClaim:
+      #       claimName: string
+      restartPolicy: Never # Never, OnFailure, Always
+      containers:
+        - name: #string
+          image: #string
+          # imagePullPolicy: Always # Always, Never, IfNotPresent
+          # command:
+          #   - string
+          # args:
+          #   - string
+          # env:
+          #   - name: string
+          #     value: string
+          # resources:
+          #   limits:
+          #     key: value
+          #   requests:
+          #     key: value
+          # ports:
+          #   - containerPort: int
+          #     protocol: string
+          #     name: string
+          # volumeMounts:
+          #   - name: string
+          #     mountPath: string

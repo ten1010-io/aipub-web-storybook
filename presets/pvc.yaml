@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  accessModes:
+    - ReadWriteOnce # ReadWriteOnce, ReadOnlyMany, ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  volumeMode: Filesystem # Filesystem, Block
+  # storageClassName: string
+  # volumeName: string
+  # selector:
+  #   matchLabels:
+  #     type: string
+  #   matchExpressions:
+  #     - key: string
+  #       operator: In # In, NotIn, Exists, DoesNotExist
+  #       values:
+  #         - string

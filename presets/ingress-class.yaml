@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  controller: #string
+  # parameters:
+  #   apiGroup: string
+  #   kind: string
+  #   name: string
+  #   namespace: string
+  #   scope: Cluster

@@ -1,0 +1,89 @@
+{
+  "kind": "ResourceQuotaList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "46657590"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "quota-basic",
+        "namespace": "example-ns"
+      },
+      "spec": {
+        "hard": {
+          "pods": "10",
+          "requests.cpu": "4",
+          "requests.memory": "8Gi",
+          "limits.cpu": "4",
+          "limits.memory": "8Gi"
+        }
+      },
+      "status": {
+        "hard": {
+          "pods": "10",
+          "requests.cpu": "4",
+          "requests.memory": "8Gi",
+          "limits.cpu": "4",
+          "limits.memory": "8Gi"
+        },
+        "used": {
+          "pods": "3",
+          "requests.cpu": "1",
+          "requests.memory": "2Gi",
+          "limits.cpu": "2",
+          "limits.memory": "4Gi"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "name": "quota-storage-gpu",
+        "namespace": "example-ns"
+      },
+      "spec": {
+        "hard": {
+          "persistentvolumeclaims": "10",
+          "request.nvidia.com/gpu": "4",
+          "request.customresourceusercpu": "1000m"
+        }
+      },
+      "status": {
+        "hard": {
+          "persistentvolumeclaims": "10",
+          "request.nvidia.com/gpu": "4",
+          "request.customresourceusercpu": "1000m"
+        },
+        "used": {
+          "persistentvolumeclaims": "2",
+          "request.nvidia.com/gpu": "1",
+          "request.customresourceusercpu": "250m"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "name": "quota-mixed",
+        "namespace": "example-ns"
+      },
+      "spec": {
+        "hard": {
+          "cpu": "4",
+          "memory": "8Gi",
+          "requests.storage": "50Gi"
+        }
+      },
+      "status": {
+        "hard": {
+          "cpu": "4",
+          "memory": "8Gi",
+          "requests.storage": "50Gi"
+        },
+        "used": {
+          "cpu": "1",
+          "memory": "3Gi"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  group: #string
+  scope: Namespaced # Namespaced, Cluster
+  names:
+    kind: #string
+    listKind: #string
+    plural: #string
+    singular: #string
+    # shortNames:
+    #   - string
+    # categories:
+    #   - string
+  versions:
+    - name: v1
+      served: boolean
+      storage: boolean
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              # properties:
+              #   fieldName:
+              #     type: string # string, integer, boolean, object, array
+            # status:
+            #   type: object
+      # additionalPrinterColumns:
+      #   - name: string
+      #     type: string # string, integer, number, boolean, date
+      #     jsonPath: string
+      #     description: string
+      #     priority: int
+      # subresources:
+      #   status: {}
+      # deprecated: false
+  # conversion:
+  #   strategy: None # None, Webhook
+  #   webhook:
+  #     conversionReviewVersions:
+  #       - string
+  #     clientConfig:
+  #       service:
+  #         name: string
+  #         namespace: string
+  #         path: string
+  #         port: int
+  #       url: string
+  #       caBundle: string
+  # preserveUnknownFields: false

@@ -1,0 +1,71 @@
+{
+  "apiVersion": "aipub.ten1010.io/v1alpha1",
+  "kind": "ResourcePresetList",
+  "items": [
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "ResourcePreset",
+      "metadata": {
+        "name": "mock-uuid-small",
+        "creationTimestamp": "2026-07-28T02:10:00Z",
+        "annotations": {
+          "resourcepreset.aipub.ten1010.io/display-name": "스몰 (CPU 전용)"
+        }
+      },
+      "resources": {
+        "requests.cpu": "2",
+        "requests.memory": "8Gi",
+        "limits.cpu": "4",
+        "limits.memory": "16Gi"
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "ResourcePreset",
+      "metadata": {
+        "name": "mock-uuid-large",
+        "creationTimestamp": "2026-07-29T05:30:00Z",
+        "annotations": {
+          "resourcepreset.aipub.ten1010.io/display-name": "라지"
+        }
+      },
+      "resources": {
+        "requests.cpu": "8",
+        "requests.memory": "32Gi",
+        "limits.cpu": "8",
+        "limits.memory": "32Gi"
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "ResourcePreset",
+      "metadata": {
+        "name": "mock-uuid-po-docs",
+        "creationTimestamp": "2026-07-29T08:00:00Z",
+        "annotations": {
+          "resourcepreset.aipub.ten1010.io/display-name": "PO 문서작업용"
+        }
+      },
+      "preferredNodes": ["vnode1.pnode2.idc1.ten1010.io"],
+      "resources": {
+        "requests.cpu": "2",
+        "requests.memory": "32Gi",
+        "requests.ten1010.io/gpu-block-63mb-a2000": "2",
+        "limits.cpu": "2",
+        "limits.memory": "32Gi"
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "ResourcePreset",
+      "metadata": {
+        "name": "legacy-flat",
+        "creationTimestamp": "2026-07-20T01:00:00Z"
+      },
+      "resources": {
+        "cpu": "500m",
+        "memory": "3000Mi"
+      }
+    }
+  ]
+}

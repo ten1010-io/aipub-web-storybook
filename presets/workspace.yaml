@@ -1,0 +1,58 @@
+apiVersion: aipub.ten1010.io/v1beta1
+kind: Workspace
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  replicas: 1
+  # suspend: false
+  ssh:
+    authorizedKeys: #string
+    # port: int
+  tools:
+    - type: ttyd # ttyd, jupyter, filebrowser
+    # - type: jupyter
+    # - type: filebrowser
+  # ports:
+  #   - name: string
+  #     port: int
+  #     appProtocol: http
+  #     expose:
+  #       enabled: boolean
+  #       type: HTTP
+  #       http:
+  #         host: string
+  #         path: string
+  #         tls: boolean
+  template:
+    spec:
+      containers:
+        - name: #string # 리소스 이름(metadata.name)과 동일해야 함
+          image: #string
+          resources:
+            requests:
+              cpu: '1'
+              memory: 4Gi
+              # ten1010.io/gpu-block-63mb-a2000: "1"
+            limits:
+              cpu: '1'
+              memory: 4Gi
+              # ten1010.io/gpu-block-63mb-a2000: "1" # requests와 동일해야 함
+          # command:
+          #   - string
+          # args:
+          #   - string
+          # env:
+          #   - name: string
+          #     value: string
+          # volumeMounts:
+          #   - name: string
+          #     mountPath: string
+      # volumes:
+      #   - name: string
+      #     persistentVolumeClaim:
+      #       claimName: string

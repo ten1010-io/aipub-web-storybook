@@ -1,0 +1,22 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: #string
+  annotations: {}
+    #  key: string
+  labels: {}
+    #  key: string
+  namespace: #string
+spec:
+  selector:
+    matchLabels: {}
+      #  key: string
+    matchExpressions:
+#      - key: string
+#        operator: string
+#        values:
+#          - string
+#  maxUnavailable: string
+#  minAvailable: string
+#  unhealthyPodEvictionPolicy: string
+__clone: true

@@ -1,0 +1,276 @@
+{
+  "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+  "items": [
+    {
+      "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+      "kind": "AipubJob",
+      "metadata": {
+        "creationTimestamp": "2025-01-15T10:30:00Z",
+        "generation": 1,
+        "managedFields": [
+          {
+            "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:image": {},
+                "f:replicas": {},
+                "f:resources": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-01-15T10:30:00Z"
+          },
+          {
+            "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:conditions": {},
+                "f:phase": {},
+                "f:startTime": {}
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-01-15T10:30:05Z"
+          }
+        ],
+        "name": "sample-ai-job-001",
+        "namespace": "default",
+        "resourceVersion": "12345",
+        "uid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+      },
+      "spec": {
+        "image": "ten1010.io/ai-pub/sample-model:latest",
+        "replicas": 1,
+        "resources": {
+          "cpu": "2",
+          "memory": "4Gi",
+          "gpu": "1"
+        }
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2025-01-15T10:30:05Z",
+            "message": "Job is running successfully",
+            "reason": "Running",
+            "status": "True",
+            "type": "Ready"
+          }
+        ],
+        "phase": "Running",
+        "startTime": "2025-01-15T10:30:05Z"
+      }
+    },
+    {
+      "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+      "kind": "AipubJob",
+      "metadata": {
+        "creationTimestamp": "2025-01-14T15:20:00Z",
+        "generation": 2,
+        "managedFields": [
+          {
+            "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:image": {},
+                "f:replicas": {},
+                "f:resources": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-01-14T15:20:00Z"
+          },
+          {
+            "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:conditions": {},
+                "f:phase": {},
+                "f:completionTime": {}
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-01-14T16:45:30Z"
+          }
+        ],
+        "name": "training-job-002",
+        "namespace": "default",
+        "resourceVersion": "12346",
+        "uid": "b2c3d4e5-f6g7-8901-bcde-f23456789012"
+      },
+      "spec": {
+        "image": "ten1010.io/ai-pub/training-model:v1.2",
+        "replicas": 2,
+        "resources": {
+          "cpu": "4",
+          "memory": "8Gi",
+          "gpu": "2"
+        }
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2025-01-14T16:45:30Z",
+            "message": "Job completed successfully",
+            "reason": "Completed",
+            "status": "True",
+            "type": "Complete"
+          }
+        ],
+        "phase": "Succeeded",
+        "completionTime": "2025-01-14T16:45:30Z"
+      }
+    },
+    {
+      "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+      "kind": "AipubJob",
+      "metadata": {
+        "creationTimestamp": "2025-01-13T09:15:00Z",
+        "generation": 1,
+        "managedFields": [
+          {
+            "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:image": {},
+                "f:replicas": {},
+                "f:resources": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-01-13T09:15:00Z"
+          },
+          {
+            "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:conditions": {},
+                "f:phase": {}
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-01-13T09:15:10Z"
+          }
+        ],
+        "name": "inference-job-003",
+        "namespace": "default",
+        "resourceVersion": "12347",
+        "uid": "c3d4e5f6-g7h8-9012-cdef-345678901234"
+      },
+      "spec": {
+        "image": "ten1010.io/ai-pub/inference-model:stable",
+        "replicas": 3,
+        "resources": {
+          "cpu": "1",
+          "memory": "2Gi",
+          "gpu": "0"
+        }
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2025-01-13T09:15:10Z",
+            "message": "Job is pending due to insufficient resources",
+            "reason": "Pending",
+            "status": "False",
+            "type": "Ready"
+          }
+        ],
+        "phase": "Pending"
+      }
+    },
+    {
+      "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+      "kind": "AipubJob",
+      "metadata": {
+        "creationTimestamp": "2025-01-12T14:30:00Z",
+        "generation": 1,
+        "managedFields": [
+          {
+            "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:image": {},
+                "f:replicas": {},
+                "f:resources": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-01-12T14:30:00Z"
+          },
+          {
+            "apiVersion": "aipubjob.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:conditions": {},
+                "f:phase": {},
+                "f:completionTime": {}
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-01-12T15:45:20Z"
+          }
+        ],
+        "name": "failed-job-004",
+        "namespace": "default",
+        "resourceVersion": "12348",
+        "uid": "d4e5f6g7-h8i9-0123-defg-456789012345"
+      },
+      "spec": {
+        "image": "ten1010.io/ai-pub/test-model:latest",
+        "replicas": 1,
+        "resources": {
+          "cpu": "1",
+          "memory": "1Gi",
+          "gpu": "0"
+        }
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2025-01-12T15:45:20Z",
+            "message": "Job failed due to container error",
+            "reason": "Failed",
+            "status": "False",
+            "type": "Complete"
+          }
+        ],
+        "phase": "Failed",
+        "completionTime": "2025-01-12T15:45:20Z"
+      }
+    }
+  ],
+  "kind": "AipubJobList",
+  "metadata": {
+    "continue": "",
+    "resourceVersion": "12349"
+  }
+}

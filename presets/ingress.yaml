@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  # ingressClassName: string
+  rules:
+    - host: #string
+      http:
+        paths:
+          - path: #string
+            pathType: Prefix
+            backend:
+              service:
+                name: #string
+                port:
+                  number: #int
+  # defaultBackend:
+  #   service:
+  #     name: string
+  #     port:
+  #       number: int
+  # tls:
+  #   - hosts:
+  #       - string
+  #     secretName: string

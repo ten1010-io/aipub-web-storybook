@@ -1,0 +1,1 @@
+async function r(e){return await new Promise(t=>setTimeout(t,e??0))}let n=null;function i(e){n=e}async function a(e){if(!n)throw new Error("Alert function is not initialized. Make sure AlertProvider is mounted.");const t=e.delay??0;return t>0&&await r(t),n(e)}export{a,i as s};

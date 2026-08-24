@@ -1,0 +1,39 @@
+{
+  "kind": "Event",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "pod-started.17a9b8c9d0e1f2g3",
+    "namespace": "default",
+    "uid": "550e8400-e29b-41d4-a716-446655440000",
+    "resourceVersion": "12340",
+    "creationTimestamp": "2025-01-24T06:30:00Z",
+    "labels": {
+      "app": "nginx",
+      "component": "web"
+    },
+    "annotations": {
+      "kubernetes.io/description": "Pod started event for nginx deployment"
+    }
+  },
+  "firstTimestamp": "2025-01-24T06:30:00Z",
+  "lastTimestamp": "2025-01-24T06:30:00Z",
+  "count": 1,
+  "reason": "Started",
+  "message": "Started container nginx",
+  "type": "Normal",
+  "source": {
+    "component": "kubelet",
+    "host": "node-1"
+  },
+  "involvedObject": {
+    "kind": "Pod",
+    "namespace": "default",
+    "name": "nginx-deployment-7c79c4bf97-abc12",
+    "uid": "550e8400-e29b-41d4-a716-446655440000",
+    "apiVersion": "v1",
+    "resourceVersion": "12340"
+  },
+  "reportingComponent": "kubelet",
+  "reportingInstance": "node-1",
+  "eventTime": "2025-01-24T06:30:00Z"
+}

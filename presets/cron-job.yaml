@@ -1,0 +1,60 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  # 크론 스케줄 문법 https://kubernetes.io/ko/docs/concepts/workloads/controllers/cron-jobs/#%ED%81%AC%EB%A1%A0-%EC%8A%A4%EC%BC%80%EC%A4%84-%EB%AC%B8%EB%B2%95
+  schedule: '* * * * *' # 1분마다 실행
+  # failedJobsHistoryLimit: int
+  # successfulJobsHistoryLimit: int
+  # suspend: boolean
+  # timeZone: string
+  jobTemplate:
+    spec:
+      # backoffLimit: int
+      # activeDeadlineSeconds: int
+      # parallelism: int
+      # completions: int
+      # ttlSecondsAfterFinished: int
+      template:
+        spec:
+          # nodeSelector:
+          #   key: value
+          # tolerations:
+          #   - key: string
+          #     operator: string
+          #     value: string
+          #     effect: string
+          # volumes:
+          #   - name: string
+          #     persistentVolumeClaim:
+          #       claimName: string
+          restartPolicy: Never # Never, OnFailure, Always
+          containers:
+            - name: #string
+              image: #string
+              # imagePullPolicy: Always # Always, Never, IfNotPresent
+              # command:
+              #   - string
+              # args:
+              #   - string
+              # env:
+              #   - name: string
+              #     value: string
+              # resources:
+              #   limits:
+              #     key: value
+              #   requests:
+              #     key: value
+              # ports:
+              #   - containerPort: int
+              #     protocol: string
+              #     name: string
+              # volumeMounts:
+              #   - name: string
+              #     mountPath: string

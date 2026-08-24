@@ -1,0 +1,247 @@
+{
+  "apiVersion": "coaster.ten1010.io/v1alpha1",
+  "kind": "NodeResource",
+  "metadata": {
+    "creationTimestamp": "2025-07-22T08:04:22Z",
+    "generation": 1,
+    "name": "vnode3.pnode7.idc1.ten1010.io",
+    "resourceVersion": "11407363",
+    "uid": "644dd06f-e9fd-4375-a77f-d03738382df3"
+  },
+  "status": {
+    "bindedPods": [
+      {
+        "name": "fluent-bit-8cz55",
+        "namespace": "aipub-efk",
+        "uid": "d1be038d-fb02-4127-8f3c-09b80efc0327"
+      },
+      {
+        "name": "dcgm-exporter-d9j72",
+        "namespace": "aipub",
+        "uid": "6c71c5f8-a3a3-4429-b994-96e36f9eb688"
+      },
+      {
+        "name": "gpu-allocation-info-controller-tmqdw",
+        "namespace": "aipub",
+        "uid": "4fc04fd7-4289-403d-a195-c1b163cf2167"
+      },
+      {
+        "name": "gpu-pod-metric-exporter-daemonset-zc8s9",
+        "namespace": "aipub",
+        "uid": "98299057-dfff-487f-b4bd-f880a4a7b85f"
+      },
+      {
+        "name": "mig-mapping-exporter-daemonset-vqs55",
+        "namespace": "aipub",
+        "uid": "0d63eca2-e1da-471c-bded-9d35a1b399f7"
+      },
+      {
+        "name": "node-info-exporter-dp4lj",
+        "namespace": "aipub",
+        "uid": "24d918c2-2abe-4c3a-a3d0-3d8037fe3c27"
+      },
+      {
+        "name": "gpu-plugin-6p5wt",
+        "namespace": "coaster",
+        "uid": "cdcf87c6-7faf-47f1-b8cd-26cebf18ee93"
+      },
+      {
+        "name": "gpuconfig-controller-pz2dz",
+        "namespace": "coaster",
+        "uid": "88acca2a-73ee-4940-9ae6-74f8d2015123"
+      },
+      {
+        "name": "kube-flannel-ds-7p49m",
+        "namespace": "kube-flannel",
+        "uid": "0412bd78-50d8-4a68-9059-06a56d2ccba5"
+      },
+      {
+        "name": "kube-proxy-7b6jl",
+        "namespace": "kube-system",
+        "uid": "63ade9b0-c630-4ea2-858f-6026f571ce2d"
+      },
+      {
+        "name": "park-test-cd67b905-0",
+        "namespace": "lgd-test",
+        "uid": "696edab6-d1e2-4780-bb06-0a96c78e8ecb"
+      },
+      {
+        "name": "vaildation2-98585dfc-3",
+        "namespace": "lgd-test",
+        "uid": "d2776688-3412-420d-a981-08066e0ad57f"
+      },
+      {
+        "name": "vaildation2-98585dfc-5",
+        "namespace": "lgd-test",
+        "uid": "674e4b7c-344c-4d4e-aed0-502c8ebf75b3"
+      },
+      {
+        "name": "vaildation2-98585dfc-6",
+        "namespace": "lgd-test",
+        "uid": "1edf9f23-7f06-4b75-a0cb-c5514b40c5c2"
+      },
+      {
+        "name": "vaildation2-98585dfc-7",
+        "namespace": "lgd-test",
+        "uid": "f4212090-c2db-4578-9276-5d4cc3bc1d63"
+      },
+      {
+        "name": "vaildation2-98585dfc-8",
+        "namespace": "lgd-test",
+        "uid": "de701576-ad6f-4b4d-91d6-d59e197700fc"
+      },
+      {
+        "name": "vaildation2-98585dfc-9",
+        "namespace": "lgd-test",
+        "uid": "b0dd3c53-c27b-4918-8947-87b3ad18542f"
+      },
+      {
+        "name": "metallb-speaker-lfkh4",
+        "namespace": "metallb",
+        "uid": "7d11a160-ecb9-403a-a89f-e08339b84d25"
+      },
+      {
+        "name": "ten-test-block-ws-0e6b9767-0",
+        "namespace": "proj1",
+        "uid": "55515b4f-73b5-43c4-a190-2bd0e874adf2"
+      },
+      {
+        "name": "kube-prometheus-stack-prometheus-node-exporter-xvwjh",
+        "namespace": "promstack",
+        "uid": "552b8c7a-4be1-4f57-8b3f-3214d2f7d168"
+      },
+      {
+        "name": "trident-node-linux-knn4z",
+        "namespace": "trident",
+        "uid": "5af49842-44bf-419c-8323-075b2e11e1d5"
+      }
+    ],
+    "blocks": {
+      "binded": [
+        {
+          "gpus": [
+            {
+              "count": 50,
+              "gpuIndex": 0,
+              "pod": {
+                "name": "park-test-cd67b905-0",
+                "namespace": "lgd-test",
+                "uid": "696edab6-d1e2-4780-bb06-0a96c78e8ecb"
+              }
+            },
+            {
+              "count": 10,
+              "gpuIndex": 0,
+              "pod": {
+                "name": "vaildation2-98585dfc-3",
+                "namespace": "lgd-test",
+                "uid": "d2776688-3412-420d-a981-08066e0ad57f"
+              }
+            },
+            {
+              "count": 10,
+              "gpuIndex": 0,
+              "pod": {
+                "name": "vaildation2-98585dfc-5",
+                "namespace": "lgd-test",
+                "uid": "674e4b7c-344c-4d4e-aed0-502c8ebf75b3"
+              }
+            },
+            {
+              "count": 10,
+              "gpuIndex": 0,
+              "pod": {
+                "name": "vaildation2-98585dfc-6",
+                "namespace": "lgd-test",
+                "uid": "1edf9f23-7f06-4b75-a0cb-c5514b40c5c2"
+              }
+            },
+            {
+              "count": 10,
+              "gpuIndex": 0,
+              "pod": {
+                "name": "vaildation2-98585dfc-7",
+                "namespace": "lgd-test",
+                "uid": "f4212090-c2db-4578-9276-5d4cc3bc1d63"
+              }
+            },
+            {
+              "count": 10,
+              "gpuIndex": 0,
+              "pod": {
+                "name": "vaildation2-98585dfc-8",
+                "namespace": "lgd-test",
+                "uid": "de701576-ad6f-4b4d-91d6-d59e197700fc"
+              }
+            },
+            {
+              "count": 10,
+              "gpuIndex": 0,
+              "pod": {
+                "name": "vaildation2-98585dfc-9",
+                "namespace": "lgd-test",
+                "uid": "b0dd3c53-c27b-4918-8947-87b3ad18542f"
+              }
+            },
+            {
+              "count": 10,
+              "gpuIndex": 0,
+              "pod": {
+                "name": "ten-test-block-ws-0e6b9767-0",
+                "namespace": "proj1",
+                "uid": "55515b4f-73b5-43c4-a190-2bd0e874adf2"
+              }
+            }
+          ],
+          "resourceName": "ten1010.io/gpu-block-483mb-l40"
+        }
+      ],
+      "free": [
+        {
+          "counts": {
+            "0": "-20"
+          },
+          "resourceName": "ten1010.io/gpu-block-483mb-l40"
+        }
+      ],
+      "total": [
+        {
+          "counts": {
+            "0": 100
+          },
+          "resourceName": "ten1010.io/gpu-block-483mb-l40"
+        }
+      ]
+    },
+    "resources": {
+      "free": {
+        "cpu": "-2.180",
+        "ephemeral-storage": "520948709743",
+        "hugepages-1Gi": "0",
+        "hugepages-2Mi": "0",
+        "memory": "4159359.5Ki",
+        "pods": "89",
+        "ten1010.io/gpu-block-483mb-l40": "-20",
+        "ten1010.io/gpu-normal-48305mb-l40": "0",
+        "ten1010.io/resourceset-1-1gb": "20",
+        "ten1010.io/resourceset-199m-199mb-gpu-block-483mb-l40": "-20",
+        "ten1010.io/resourceset-20-20gb-gpu-normal-48305mb-l40": "0",
+        "ten1010.io/ticket-ftpserver": "3"
+      },
+      "total": {
+        "cpu": "24",
+        "ephemeral-storage": "520948709743",
+        "hugepages-1Gi": "0",
+        "hugepages-2Mi": "0",
+        "memory": "29963896Ki",
+        "pods": "110",
+        "ten1010.io/gpu-block-483mb-l40": "100",
+        "ten1010.io/gpu-normal-48305mb-l40": "0",
+        "ten1010.io/resourceset-1-1gb": "20",
+        "ten1010.io/resourceset-199m-199mb-gpu-block-483mb-l40": "100",
+        "ten1010.io/resourceset-20-20gb-gpu-normal-48305mb-l40": "0",
+        "ten1010.io/ticket-ftpserver": "3"
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+import{i as r}from"./iframe-D1zcNpR6.js";import"./use-translation-DtBcGNwE.js";const a=r.t;function e(n,i){return JSON.stringify({i18nKey:n,values:i})}function o(n){return n?n.includes("{")&&n.includes("}"):!1}export{a,o as i,e as t};

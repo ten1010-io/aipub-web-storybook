@@ -1,0 +1,48 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: #string
+  minReplicas: 1
+  maxReplicas: 10
+  # metrics:
+  #   # CPU 사용량 기반 스케일링
+  #   - type: Resource
+  #     resource:
+  #       name: cpu
+  #       target:
+  #         type: Utilization
+  #         averageUtilization: 80
+  #   # 메모리 사용량 기반 스케일링
+  #   - type: Resource
+  #     resource:
+  #       name: memory
+  #       target:
+  #         type: Utilization
+  #         averageUtilization: 80
+  # behavior:
+  #   scaleDown:
+  #     # 안정화 기간 (스케일 다운 전 대기 시간)
+  #     stabilizationWindowSeconds: 300
+  #     policies:
+  #       # 한 번에 최대 1개씩 스케일 다운
+  #       - type: Pods
+  #         value: 1
+  #         periodSeconds: 60
+  #   scaleUp:
+  #     # 안정화 기간 (스케일 업 전 대기 시간)
+  #     stabilizationWindowSeconds: 0
+  #     policies:
+  #       # 한 번에 최대 1개씩 스케일 업
+  #       - type: Pods
+  #         value: 1
+  #         periodSeconds: 60

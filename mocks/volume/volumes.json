@@ -1,0 +1,566 @@
+{
+  "apiVersion": "aipub.ten1010.io/v1alpha1",
+  "items": [
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "AIPubVolume",
+      "metadata": {
+        "creationTimestamp": "2025-06-10T02:21:25Z",
+        "finalizers": [
+          "aipubvolumes.aipub.ten1010.io/pvc-removal",
+          "aipubvolumes.aipub.ten1010.io/pv-removal"
+        ],
+        "generation": 1,
+        "labels": {
+          "aipub.ten1010.io/userid": "58363463-9f6e-4428-bb02-b2eb3c4adf60",
+          "aipub.ten1010.io/username": "soohyun2"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:capacity": {},
+                "f:storageClassName": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-10T02:21:25Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pv-removal\"": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pvc-removal\"": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-06-10T02:21:26Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:event": {
+                  ".": {},
+                  "f:created": {}
+                },
+                "f:mountWorkloads": {},
+                "f:pvName": {},
+                "f:pvcName": {},
+                "f:readyCondition": {
+                  "f:status": {}
+                },
+                "f:used": {}
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-11T03:43:26Z"
+          }
+        ],
+        "name": "jsh-volume",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "soohyun2",
+            "uid": "4a043132-9581-4d39-8667-ff9123a3f822"
+          }
+        ],
+        "resourceVersion": "47034163",
+        "uid": "e2911fc4-1dfc-40a3-b7e7-3256aa396bc4"
+      },
+      "spec": {
+        "capacity": "20Gi",
+        "storageClassName": "ontap-nas"
+      },
+      "status": {
+        "event": {
+          "created": "jsh-volume.create.e2911fc4-1dfc-40a3-b7e7-3256aa396bc4"
+        },
+        "mountWorkloads": [
+          {
+            "kind": "FtpServer",
+            "name": "hjw",
+            "uid": "c2fa17a4-0f7a-4343-b6e0-725070167e65"
+          },
+          {
+            "kind": "FtpServer",
+            "name": "yshee-sftp",
+            "uid": "044a2a2c-b65e-4625-a3b8-d134f4db74df"
+          },
+          {
+            "kind": "Workspace",
+            "name": "multi-node-training",
+            "uid": "cc9a4133-7242-4d53-a551-19c7d02130cb"
+          }
+        ],
+        "pvName": "pvc-0e612bab-42cd-4b49-a1a9-b57b524bef37",
+        "pvcName": "jsh-volume-e2911fc4",
+        "readyCondition": {
+          "status": true
+        },
+        "used": "0.00Gi"
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "AIPubVolume",
+      "metadata": {
+        "creationTimestamp": "2025-06-11T08:09:26Z",
+        "finalizers": [
+          "aipubvolumes.aipub.ten1010.io/pvc-removal",
+          "aipubvolumes.aipub.ten1010.io/pv-removal"
+        ],
+        "generation": 1,
+        "labels": {
+          "aipub.ten1010.io/userid": "0c386825-465f-4cfc-bd19-953ee1993293",
+          "aipub.ten1010.io/username": "qaadmin"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:capacity": {},
+                "f:storageClassName": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-11T08:09:26Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pv-removal\"": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pvc-removal\"": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-06-11T08:09:26Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:event": {
+                  ".": {},
+                  "f:created": {},
+                  "f:updated": {}
+                },
+                "f:mountWorkloads": {},
+                "f:pvName": {},
+                "f:pvcName": {},
+                "f:readyCondition": {
+                  "f:status": {},
+                  "f:timestamp": {}
+                },
+                "f:used": {}
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-11T03:34:22Z"
+          }
+        ],
+        "name": "sh-volumetest",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "qaadmin",
+            "uid": "6cbf9c41-5dd5-48cc-8ff9-24d6e9054e79"
+          }
+        ],
+        "resourceVersion": "47030345",
+        "uid": "9c6ce2a6-09d3-4167-a4c8-393a59f585f7"
+      },
+      "spec": {
+        "capacity": "10Gi",
+        "storageClassName": "ontap-nas"
+      },
+      "status": {
+        "event": {
+          "created": "sh-volumetest.create.9c6ce2a6-09d3-4167-a4c8-393a59f585f7",
+          "updated": "sh-volumetest.update.1751648891"
+        },
+        "mountWorkloads": [
+          {
+            "kind": "Operation",
+            "name": "test-0709-2",
+            "uid": "43d5e258-e350-417f-8f4a-45142f2aad96"
+          },
+          {
+            "kind": "Operation",
+            "name": "test-0711-1",
+            "uid": "32829274-1db9-40bd-b650-3a51d6b0c307"
+          },
+          {
+            "kind": "Workspace",
+            "name": "abc",
+            "uid": "089e4b43-7174-4fd5-8e03-06caa9036e8b"
+          }
+        ],
+        "pvName": "pvc-0a7f3753-9409-4589-acc9-2bc90fa505e4",
+        "pvcName": "sh-volumetest-9c6ce2a6",
+        "readyCondition": {
+          "status": true,
+          "timestamp": "2025-07-04T17:08:11.049850"
+        },
+        "used": "0.00Gi"
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "AIPubVolume",
+      "metadata": {
+        "creationTimestamp": "2025-07-05T01:59:48Z",
+        "finalizers": [
+          "aipubvolumes.aipub.ten1010.io/pvc-removal",
+          "aipubvolumes.aipub.ten1010.io/pv-removal"
+        ],
+        "generation": 1,
+        "labels": {
+          "aipub.ten1010.io/userid": "ac545a0e-ef4c-46d4-8b94-eb7afc2fa96d",
+          "aipub.ten1010.io/username": "feadmin1"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:capacity": {},
+                "f:storageClassName": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-05T01:59:48Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pv-removal\"": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pvc-removal\"": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-07-05T01:59:48Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:event": {
+                  ".": {},
+                  "f:created": {}
+                },
+                "f:mountWorkloads": {},
+                "f:pvName": {},
+                "f:pvcName": {},
+                "f:readyCondition": {
+                  "f:status": {}
+                },
+                "f:used": {}
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-10T10:20:12Z"
+          }
+        ],
+        "name": "test-ontap-nas",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "feadmin1",
+            "uid": "6ce175e7-88d2-4ef2-9f95-5d8a72c4ca16"
+          }
+        ],
+        "resourceVersion": "46619605",
+        "uid": "3a49f7bf-6ce9-4329-af75-76fe895f49dc"
+      },
+      "spec": {
+        "capacity": "10Gi",
+        "storageClassName": "ontap-nas"
+      },
+      "status": {
+        "event": {
+          "created": "test-ontap-nas.create.3a49f7bf-6ce9-4329-af75-76fe895f49dc"
+        },
+        "mountWorkloads": [
+          {
+            "kind": "Operation",
+            "name": "test-0709-2",
+            "uid": "43d5e258-e350-417f-8f4a-45142f2aad96"
+          }
+        ],
+        "pvName": "pvc-253abd69-94ae-4498-b279-696c2be8ee7b",
+        "pvcName": "test-ontap-nas-3a49f7bf",
+        "readyCondition": {
+          "status": true
+        },
+        "used": "0.00Gi"
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "AIPubVolume",
+      "metadata": {
+        "creationTimestamp": "2025-06-04T11:50:08Z",
+        "finalizers": [
+          "aipubvolumes.aipub.ten1010.io/pvc-removal",
+          "aipubvolumes.aipub.ten1010.io/pv-removal"
+        ],
+        "generation": 1,
+        "labels": {
+          "aipub.ten1010.io/userid": "0c386825-465f-4cfc-bd19-953ee1993293",
+          "aipub.ten1010.io/username": "qaadmin"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:capacity": {},
+                "f:storageClassName": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-04T11:50:08Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pv-removal\"": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pvc-removal\"": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-06-04T11:50:08Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:event": {
+                  ".": {},
+                  "f:created": {}
+                },
+                "f:mountWorkloads": {},
+                "f:pvName": {},
+                "f:pvcName": {},
+                "f:readyCondition": {
+                  "f:status": {}
+                },
+                "f:used": {}
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-11T03:34:51Z"
+          }
+        ],
+        "name": "yshee-volume",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "qaadmin",
+            "uid": "6cbf9c41-5dd5-48cc-8ff9-24d6e9054e79"
+          }
+        ],
+        "resourceVersion": "47030486",
+        "uid": "e129ddc6-459e-4aec-bc0e-4887faed8764"
+      },
+      "spec": {
+        "capacity": "100Gi",
+        "storageClassName": "ontap-nas"
+      },
+      "status": {
+        "event": {
+          "created": "yshee-volume.create.e129ddc6-459e-4aec-bc0e-4887faed8764"
+        },
+        "mountWorkloads": [
+          {
+            "kind": "Operation",
+            "name": "test-0711-1",
+            "uid": "32829274-1db9-40bd-b650-3a51d6b0c307"
+          },
+          {
+            "kind": "FtpServer",
+            "name": "yshee-sftp",
+            "uid": "044a2a2c-b65e-4625-a3b8-d134f4db74df"
+          }
+        ],
+        "pvName": "pvc-d2dedb39-f333-48b6-8153-dca9ce892346",
+        "pvcName": "yshee-volume-e129ddc6",
+        "readyCondition": {
+          "status": true
+        },
+        "used": "0.00Gi"
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "AIPubVolume",
+      "metadata": {
+        "creationTimestamp": "2025-06-05T07:21:40Z",
+        "finalizers": [
+          "aipubvolumes.aipub.ten1010.io/pvc-removal",
+          "aipubvolumes.aipub.ten1010.io/pv-removal"
+        ],
+        "generation": 1,
+        "labels": {
+          "aipub.ten1010.io/userid": "8e035a32-b05e-4e1f-bd97-ce90d15563d4",
+          "aipub.ten1010.io/username": "poadmin2"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:capacity": {},
+                "f:storageClassName": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-05T07:21:40Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pv-removal\"": {},
+                  "v:\"aipubvolumes.aipub.ten1010.io/pvc-removal\"": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-06-05T07:21:40Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:event": {
+                  ".": {},
+                  "f:created": {}
+                },
+                "f:pvName": {},
+                "f:pvcName": {},
+                "f:readyCondition": {
+                  "f:status": {}
+                },
+                "f:used": {}
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-10T09:20:18Z"
+          }
+        ],
+        "name": "yunju-volume",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "poadmin2",
+            "uid": "5fba36da-b3b3-45f1-864d-123cba9781aa"
+          }
+        ],
+        "resourceVersion": "46596408",
+        "uid": "e856ff4d-e0e6-440b-81e9-2686ccba700d"
+      },
+      "spec": {
+        "capacity": "10Gi",
+        "storageClassName": "ontap-nas"
+      },
+      "status": {
+        "event": {
+          "created": "yunju-volume.create.e856ff4d-e0e6-440b-81e9-2686ccba700d"
+        },
+        "pvName": "pvc-2b5246d3-eddd-426a-bf52-f8d4a1e4b5ba",
+        "pvcName": "yunju-volume-e856ff4d",
+        "readyCondition": {
+          "status": true
+        },
+        "used": "0.00Gi"
+      }
+    }
+  ],
+  "kind": "AIPubVolumeList",
+  "metadata": {
+    "continue": "",
+    "resourceVersion": "48712569"
+  }
+}

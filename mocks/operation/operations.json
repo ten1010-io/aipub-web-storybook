@@ -1,0 +1,800 @@
+{
+  "apiVersion": "aipub.ten1010.io/v1alpha1",
+  "items": [
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "Operation",
+      "metadata": {
+        "annotations": {
+          "aipub.ten1010.io/alarm-recipients": "",
+          "aipub.ten1010.io/readme": ""
+        },
+        "creationTimestamp": "2025-07-09T03:47:20Z",
+        "finalizers": ["operation.aipub.ten1010.io/ingress-path-removal"],
+        "generation": 3,
+        "labels": {
+          "aipub.ten1010.io/userid": "ac545a0e-ef4c-46d4-8b94-eb7afc2fa96d",
+          "aipub.ten1010.io/username": "feadmin1"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"operation.aipub.ten1010.io/ingress-path-removal\"": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-07-09T07:47:35Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:aipub.ten1010.io/alarm-recipients": {},
+                  "f:aipub.ten1010.io/readme": {}
+                }
+              },
+              "f:spec": {
+                ".": {},
+                "f:ports": {
+                  ".": {},
+                  "k:{\"name\":\"portname\"}": {
+                    ".": {},
+                    "f:name": {},
+                    "f:port": {}
+                  }
+                },
+                "f:replicas": {},
+                "f:revisionHistoryLimit": {},
+                "f:template": {
+                  ".": {},
+                  "f:metadata": {
+                    ".": {},
+                    "f:annotations": {
+                      ".": {},
+                      "f:aipub.ten1010.io/activity_trace": {}
+                    }
+                  },
+                  "f:spec": {
+                    ".": {},
+                    "f:containers": {}
+                  }
+                }
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-11T03:28:42Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:addresses": {},
+                "f:availableCondition": {
+                  "f:message": {},
+                  "f:reason": {}
+                },
+                "f:pods": {
+                  ".": {},
+                  "f:pending": {},
+                  "f:progressing": {},
+                  "f:ready": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-11T05:41:17Z"
+          }
+        ],
+        "name": "test-0709-1",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "feadmin1",
+            "uid": "6ce175e7-88d2-4ef2-9f95-5d8a72c4ca16"
+          }
+        ],
+        "resourceVersion": "47085367",
+        "uid": "fdc31cff-440e-449c-85bf-4e812680659d"
+      },
+      "spec": {
+        "ports": [
+          {
+            "name": "portname",
+            "port": 1234
+          }
+        ],
+        "replicas": 1,
+        "revisionHistoryLimit": 10,
+        "template": {
+          "metadata": {
+            "annotations": {
+              "aipub.ten1010.io/activity_trace": "false"
+            }
+          },
+          "spec": {
+            "containers": [
+              {
+                "image": "harbor.cluster3.idc1.ten1010.io/common/vllm:v0.7.0",
+                "name": "test-0709-1",
+                "resources": {
+                  "limits": {
+                    "ten1010.io/resourceset-129m-129mb-gpu-block-64mb-rtx-a2000": "1"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "status": {
+        "readyReplicas": 1,
+        "replicas": 1,
+        "addresses": [],
+        "availableCondition": {
+          "message": "Operation has no available containers.\nAt least one container must be ready.\nCheck container event and log for more details.",
+          "reason": "NoAvailableContainers",
+          "status": false
+        },
+        "pods": {
+          "pending": [],
+          "progressing": [
+            {
+              "creationTimestamp": "2025-07-10T07:39:19+00:00",
+              "lastTerminationState": {
+                "exitCode": 137,
+                "reason": "Error",
+                "timestamp": "2025-07-11T05:39:06+00:00"
+              },
+              "message": "back-off 5m0s restarting failed container=test-0709-1 pod=test-0709-1-fdc31cff-bf8459799-75x6f_proj1(7c5e742d-144c-4a76-bc84-2faf73576caf)",
+              "name": "test-0709-1-fdc31cff-bf8459799-75x6f",
+              "nodeName": "vnode1.pnode6.idc1.ten1010.io",
+              "reason": "CrashLoopBackOff",
+              "restartCount": 255,
+              "terminating": false,
+              "timestamp": "2025-07-11T05:07:22.142274",
+              "uid": "7c5e742d-144c-4a76-bc84-2faf73576caf"
+            }
+          ],
+          "ready": []
+        }
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "Operation",
+      "metadata": {
+        "annotations": {
+          "aipub.ten1010.io/alarm-recipients": "aaabbb/aaabbb@ten1010.io,adminuseradminuser/adminuser@ten1010.io,adminuser22/adminuser2@ten1010.io,비밀번호변경/changepw@ten1010.io,MrChillGuy/chillguy@ten1010.io,creationtest/creationtest@ten1010.io,disableddormant/disdormant@ten1010.io,휴면테스트1/dormant1@ten1010.io,휴면테스트2/dormant2@ten1010.io,휴면테스트3/dormant3@ten1010.io",
+          "aipub.ten1010.io/readme": "operation\ntest",
+          "aipubvolume.aipub.ten1010.io/mount-workloads": "sh-volumetest,test-ontap-nas",
+          "aipubvolume.aipub.ten1010.io/request": "{\"sh-volumetest\":\"/a\",\"test-ontap-nas\":\"/b\"}"
+        },
+        "creationTimestamp": "2025-07-09T03:48:53Z",
+        "finalizers": ["operation.aipub.ten1010.io/ingress-path-removal"],
+        "generation": 4,
+        "labels": {
+          "aipub.ten1010.io/userid": "ac545a0e-ef4c-46d4-8b94-eb7afc2fa96d",
+          "aipub.ten1010.io/username": "feadmin1"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:addresses": {},
+                "f:availableCondition": {
+                  "f:message": {},
+                  "f:reason": {}
+                },
+                "f:pods": {
+                  ".": {},
+                  "f:pending": {},
+                  "f:progressing": {},
+                  "f:ready": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-11T05:43:59Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:aipub.ten1010.io/alarm-recipients": {},
+                  "f:aipub.ten1010.io/readme": {},
+                  "f:aipubvolume.aipub.ten1010.io/request": {}
+                }
+              },
+              "f:spec": {
+                ".": {},
+                "f:autoScaling": {
+                  ".": {},
+                  "f:maxReplicas": {},
+                  "f:minReplicas": {},
+                  "f:rps": {},
+                  "f:scaleDown": {
+                    ".": {},
+                    "f:maxScalingSizeAtOnce": {},
+                    "f:periodSeconds": {},
+                    "f:stabilizationWindowSeconds": {}
+                  },
+                  "f:scaleUp": {
+                    ".": {},
+                    "f:maxScalingSizeAtOnce": {},
+                    "f:periodSeconds": {},
+                    "f:stabilizationWindowSeconds": {}
+                  }
+                },
+                "f:ports": {
+                  ".": {},
+                  "k:{\"name\":\"port2\"}": {
+                    ".": {},
+                    "f:name": {},
+                    "f:port": {}
+                  },
+                  "k:{\"name\":\"portname\"}": {
+                    ".": {},
+                    "f:name": {},
+                    "f:port": {}
+                  }
+                },
+                "f:replicas": {},
+                "f:revisionHistoryLimit": {},
+                "f:template": {
+                  ".": {},
+                  "f:metadata": {
+                    ".": {},
+                    "f:annotations": {
+                      ".": {},
+                      "f:aipub.ten1010.io/activity_trace": {}
+                    }
+                  },
+                  "f:spec": {
+                    ".": {},
+                    "f:containers": {}
+                  }
+                }
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-11T09:07:47Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  "f:aipubvolume.aipub.ten1010.io/mount-workloads": {}
+                },
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"operation.aipub.ten1010.io/ingress-path-removal\"": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-07-11T09:13:03Z"
+          }
+        ],
+        "name": "test-0709-2",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "feadmin1",
+            "uid": "6ce175e7-88d2-4ef2-9f95-5d8a72c4ca16"
+          }
+        ],
+        "resourceVersion": "47170561",
+        "uid": "43d5e258-e350-417f-8f4a-45142f2aad96"
+      },
+      "spec": {
+        "autoScaling": {
+          "maxReplicas": 10,
+          "minReplicas": 1,
+          "rps": "1",
+          "scaleDown": {
+            "maxScalingSizeAtOnce": 1,
+            "periodSeconds": 15,
+            "stabilizationWindowSeconds": 300
+          },
+          "scaleUp": {
+            "maxScalingSizeAtOnce": 4,
+            "periodSeconds": 15,
+            "stabilizationWindowSeconds": 0
+          }
+        },
+        "ports": [
+          {
+            "name": "portname",
+            "port": 11
+          },
+          {
+            "name": "port2",
+            "port": 22
+          }
+        ],
+        "replicas": 1,
+        "revisionHistoryLimit": 10,
+        "template": {
+          "metadata": {
+            "annotations": {
+              "aipub.ten1010.io/activity_trace": "false"
+            }
+          },
+          "spec": {
+            "containers": [
+              {
+                "args": ["dd", "ee", "ff"],
+                "command": ["/bin/bash", "-c", "sleep", "infinity"],
+                "env": [
+                  {
+                    "name": "ENV",
+                    "value": "11"
+                  },
+                  {
+                    "name": "ENV2",
+                    "value": "22"
+                  }
+                ],
+                "image": "harbor.cluster3.idc1.ten1010.io/common/langserve:20250615",
+                "name": "test-0709-2",
+                "resources": {
+                  "limits": {
+                    "ten1010.io/resourceset-129m-129mb-gpu-block-64mb-rtx-a2000": "2"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "status": {
+        "readyReplicas": 1,
+        "replicas": 1,
+        "addresses": [],
+        "availableCondition": {
+          "message": "Operation has no available containers.\nAt least one container must be ready.\nCheck container event and log for more details.",
+          "reason": "NoAvailableContainers",
+          "status": false
+        },
+        "pods": {
+          "pending": [],
+          "progressing": [
+            {
+              "creationTimestamp": "2025-07-09T11:36:28+00:00",
+              "lastTerminationState": {
+                "exitCode": 1,
+                "reason": "Error",
+                "timestamp": "2025-07-11T05:43:45+00:00"
+              },
+              "message": "back-off 5m0s restarting failed container=test-0709-2 pod=test-0709-2-43d5e258-5d678b445b-6pvb8_proj1(4d6b35eb-0065-4c31-ac97-427dcc025550)",
+              "name": "test-0709-2-43d5e258-5d678b445b-6pvb8",
+              "nodeName": "pnode4.idc1.ten1010.io",
+              "reason": "CrashLoopBackOff",
+              "restartCount": 493,
+              "terminating": false,
+              "timestamp": "2025-07-11T05:02:31.465334",
+              "uid": "4d6b35eb-0065-4c31-ac97-427dcc025550"
+            }
+          ],
+          "ready": []
+        }
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "Operation",
+      "metadata": {
+        "annotations": {
+          "aipub.ten1010.io/alarm-recipients": "",
+          "aipub.ten1010.io/readme": "",
+          "aipubvolume.aipub.ten1010.io/mount-workloads": "sh-volumetest,yshee-volume",
+          "aipubvolume.aipub.ten1010.io/request": "{\"sh-volumetest\":\"/root/a\",\"yshee-volume\":\"/b\"}"
+        },
+        "creationTimestamp": "2025-07-11T03:34:22Z",
+        "deletionGracePeriodSeconds": 0,
+        "deletionTimestamp": "2025-07-11T09:13:03Z",
+        "finalizers": ["operation.aipub.ten1010.io/ingress-path-removal"],
+        "generation": 4,
+        "labels": {
+          "aipub.ten1010.io/userid": "ac545a0e-ef4c-46d4-8b94-eb7afc2fa96d",
+          "aipub.ten1010.io/username": "feadmin1"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:aipub.ten1010.io/alarm-recipients": {},
+                  "f:aipub.ten1010.io/readme": {},
+                  "f:aipubvolume.aipub.ten1010.io/request": {}
+                }
+              },
+              "f:spec": {
+                ".": {},
+                "f:ports": {
+                  ".": {},
+                  "k:{\"name\":\"port1\"}": {
+                    ".": {},
+                    "f:name": {},
+                    "f:port": {}
+                  }
+                },
+                "f:replicas": {},
+                "f:revisionHistoryLimit": {},
+                "f:template": {
+                  ".": {},
+                  "f:metadata": {
+                    ".": {},
+                    "f:annotations": {
+                      ".": {},
+                      "f:aipub.ten1010.io/activity_trace": {}
+                    }
+                  },
+                  "f:spec": {
+                    ".": {},
+                    "f:containers": {}
+                  }
+                }
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-11T03:35:36Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  "f:aipubvolume.aipub.ten1010.io/mount-workloads": {}
+                },
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"operation.aipub.ten1010.io/ingress-path-removal\"": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-07-11T04:51:42Z"
+          }
+        ],
+        "name": "test-0711-1",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "feadmin1",
+            "uid": "6ce175e7-88d2-4ef2-9f95-5d8a72c4ca16"
+          }
+        ],
+        "resourceVersion": "47170553",
+        "uid": "32829274-1db9-40bd-b650-3a51d6b0c307"
+      },
+      "spec": {
+        "ports": [
+          {
+            "name": "port1",
+            "port": 1231
+          }
+        ],
+        "replicas": 1,
+        "revisionHistoryLimit": 10,
+        "template": {
+          "metadata": {
+            "annotations": {
+              "aipub.ten1010.io/activity_trace": "false"
+            }
+          },
+          "spec": {
+            "containers": [
+              {
+                "image": "harbor.cluster3.idc1.ten1010.io/common/gpu-test:v2-ssh",
+                "name": "test-0711-1",
+                "resources": {
+                  "limits": {
+                    "ten1010.io/resourceset-129m-129mb-gpu-block-64mb-rtx-a2000": "2"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "status": {
+        "readyReplicas": 1,
+        "replicas": 1,
+        "availableCondition": {
+          "status": false
+        }
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1alpha1",
+      "kind": "Operation",
+      "metadata": {
+        "annotations": {
+          "aipub.ten1010.io/activity_trace": "true",
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"aipub.ten1010.io/v1alpha1\",\"kind\":\"Operation\",\"metadata\":{\"annotations\":{\"aipub.ten1010.io/activity_trace\":\"true\"},\"labels\":{\"aipub.ten1010.io/username\":\"yongjun\"},\"name\":\"test-fastapi\",\"namespace\":\"proj1\"},\"spec\":{\"ports\":[{\"name\":\"port\",\"port\":8090}],\"replicas\":1,\"template\":{\"metadata\":{\"labels\":{\"app\":\"test-fastapi\"}},\"spec\":{\"containers\":[{\"args\":[\"pip install \\\"fastapi[all]\\\" uvicorn \\u0026\\u0026\\necho 'from fastapi import FastAPI\\nimport uvicorn\\napp = FastAPI(\\n    root_path=\\\"/aipub-test-fastapi-port\\\"\\n)\\n@app.get(\\\"/\\\")\\ndef hello():\\n    return {\\\"message\\\": \\\"hello\\\"}\\nif __name__ == \\\"__main__\\\":\\n    uvicorn.run(app, host=\\\"0.0.0.0\\\", port=8090)' \\u003e /data/app.py \\u0026\\u0026\\npython -m uvicorn app:app --host 0.0.0.0 --port 8090 --log-level debug\\n\"],\"command\":[\"/bin/sh\",\"-c\"],\"image\":\"python:3.9-slim\",\"name\":\"fastapi-container\",\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"512Mi\"},\"requests\":{\"cpu\":\"100m\",\"memory\":\"128Mi\"}},\"volumeMounts\":[{\"mountPath\":\"/data\",\"name\":\"test-volume\"}],\"workingDir\":\"/data\"}],\"hostname\":\"test-hostname\",\"nodeSelector\":{\"kubernetes.io/hostname\":\"vnode9.pnode6.idc1.ten1010.io\"},\"volumes\":[{\"emptyDir\":{\"medium\":\"Memory\",\"sizeLimit\":\"512Mi\"},\"name\":\"test-volume\"}]}}}}\n"
+        },
+        "creationTimestamp": "2025-07-10T07:41:51Z",
+        "finalizers": ["operation.aipub.ten1010.io/ingress-path-removal"],
+        "generation": 7,
+        "labels": {
+          "aipub.ten1010.io/username": "yongjun"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"operation.aipub.ten1010.io/ingress-path-removal\"": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-07-10T07:41:51Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:aipub.ten1010.io/activity_trace": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:aipub.ten1010.io/username": {}
+                }
+              },
+              "f:spec": {
+                ".": {},
+                "f:ports": {
+                  ".": {},
+                  "k:{\"name\":\"port\"}": {
+                    ".": {},
+                    "f:name": {},
+                    "f:port": {}
+                  }
+                },
+                "f:replicas": {},
+                "f:revisionHistoryLimit": {},
+                "f:template": {
+                  ".": {},
+                  "f:metadata": {
+                    ".": {},
+                    "f:labels": {
+                      ".": {},
+                      "f:app": {}
+                    }
+                  },
+                  "f:spec": {
+                    ".": {},
+                    "f:hostname": {},
+                    "f:nodeSelector": {
+                      ".": {},
+                      "f:kubernetes.io/hostname": {}
+                    },
+                    "f:volumes": {}
+                  }
+                }
+              }
+            },
+            "manager": "kubectl-client-side-apply",
+            "operation": "Update",
+            "time": "2025-07-10T07:41:51Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:addresses": {},
+                "f:availableCondition": {
+                  "f:lastTransitionTimestamp": {},
+                  "f:status": {}
+                },
+                "f:pods": {
+                  ".": {},
+                  "f:pending": {},
+                  "f:progressing": {},
+                  "f:ready": {}
+                }
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-11T05:43:40Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                "f:template": {
+                  "f:spec": {
+                    "f:containers": {}
+                  }
+                }
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-11T09:06:44Z"
+          }
+        ],
+        "name": "test-fastapi",
+        "namespace": "proj1",
+        "resourceVersion": "47168032",
+        "uid": "bf521253-3091-4576-89ae-e3fbc19c668f"
+      },
+      "spec": {
+        "ports": [
+          {
+            "name": "port",
+            "port": 8090
+          }
+        ],
+        "replicas": 1,
+        "revisionHistoryLimit": 10,
+        "template": {
+          "metadata": {
+            "labels": {
+              "app": "test-fastapi"
+            }
+          },
+          "spec": {
+            "containers": [
+              {
+                "args": [
+                  "pip install \"fastapi[all]\" uvicorn &&\necho 'from fastapi import FastAPI\nimport uvicorn\napp = FastAPI(\n    root_path=\"/aipub-test-fastapi-port\"\n)\n@app.get(\"/\")\ndef hello():\n    return {\"message\": \"hello\"}\nif __name__ == \"__main__\":\n    uvicorn.run(app, host=\"0.0.0.0\", port=8090)' > /data/app.py &&\npython -m uvicorn app:app --host 0.0.0.0 --port 8090 --log-level debug\n"
+                ],
+                "command": ["/bin/sh", "-c"],
+                "env": [
+                  {
+                    "name": "FASTAPI_PORT",
+                    "value": "8090"
+                  },
+                  {
+                    "name": "FASTAPI_PORT2",
+                    "value": "8092"
+                  }
+                ],
+                "image": "python:3.9-slim",
+                "name": "fastapi-container",
+                "readinessProbe": {
+                  "failureThreshold": 6,
+                  "httpGet": {
+                    "path": "/",
+                    "port": 8088
+                  }
+                },
+                "resources": {
+                  "limits": {
+                    "cpu": "500m",
+                    "memory": "512Mi"
+                  },
+                  "requests": {
+                    "cpu": "100m",
+                    "memory": "128Mi"
+                  }
+                },
+                "volumeMounts": [
+                  {
+                    "mountPath": "/data",
+                    "name": "test-volume"
+                  }
+                ],
+                "workingDir": "/data"
+              }
+            ],
+            "hostname": "test-hostname",
+            "nodeSelector": {
+              "kubernetes.io/hostname": "vnode9.pnode6.idc1.ten1010.io"
+            },
+            "volumes": [
+              {
+                "emptyDir": {
+                  "medium": "Memory",
+                  "sizeLimit": "512Mi"
+                },
+                "name": "test-volume"
+              }
+            ]
+          }
+        }
+      },
+      "status": {
+        "readyReplicas": 1,
+        "replicas": 1,
+        "addresses": [],
+        "availableCondition": {
+          "lastTransitionTimestamp": "2025-07-11T05:43:33.180584+00:00",
+          "status": true
+        },
+        "pods": {
+          "pending": [],
+          "progressing": [
+            {
+              "creationTimestamp": "2025-07-10T07:46:28+00:00",
+              "lastTerminationState": {},
+              "message": "Readiness probe failed: Check Container logs and events for more details",
+              "name": "test-fastapi-bf521253-567c554869-bwc2p",
+              "nodeName": "pnode4.idc1.ten1010.io",
+              "reason": "ReadinessProbeFailed",
+              "restartCount": 0,
+              "terminating": false,
+              "timestamp": "2025-07-11T05:02:31.636295",
+              "uid": "00a62ad5-6861-450c-b719-92a6c2502b18"
+            }
+          ],
+          "ready": [
+            {
+              "creationTimestamp": "2025-07-10T07:45:01+00:00",
+              "lastTerminationState": {},
+              "name": "test-fastapi-bf521253-6d47847649-qtfcc",
+              "nodeName": "pnode4.idc1.ten1010.io",
+              "restartCount": 0,
+              "terminating": false,
+              "timestamp": "2025-07-11T05:02:31.636489",
+              "uid": "993bbfd4-3ff5-41ca-8e09-e864375cc504"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "kind": "OperationList",
+  "metadata": {
+    "continue": "",
+    "resourceVersion": "48713415"
+  }
+}

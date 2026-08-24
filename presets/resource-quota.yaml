@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: #string
+  namespace: #string
+#  annotations:  key: string
+#  labels:  key: string
+spec:
+#  hard:  key: string
+#  scopeSelector:
+#    matchExpressions:
+#      - operator: string
+#        scopeName: string
+#        values:
+#          - string
+#  scopes:
+#    - string

@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Event
+metadata:
+  name: #string
+  namespace: #string
+#  annotations:  key: string
+#  labels:  key: string
+#action: string
+#count: int
+#eventTime: string
+#firstTimestamp: string
+#involvedObject:
+#  apiVersion: string
+#  fieldPath: string
+#  kind: string
+#  name: string
+#  namespace: string
+#  resourceVersion: string
+#  uid: string
+#lastTimestamp: string
+#message: string
+#reason: string
+#related:
+#  apiVersion: string
+#  fieldPath: string
+#  kind: string
+#  name: string
+#  namespace: string
+#  resourceVersion: string
+#  uid: string
+#reportingComponent: string
+#reportingInstance: string
+#series:
+#  count: int
+#  lastObservedTime: string
+#source:
+#  component: string
+#  host: string
+#type: event

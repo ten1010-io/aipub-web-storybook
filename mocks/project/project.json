@@ -1,0 +1,84 @@
+{
+  "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+  "kind": "Project",
+  "metadata": {
+    "creationTimestamp": "2025-07-04T07:23:47Z",
+    "generation": 20,
+    "managedFields": [
+      {
+        "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:status": {
+            ".": {},
+            "f:allBoundAipubUsers": {},
+            "f:allBoundImageHubs": {},
+            "f:allBoundNodeGroups": {},
+            "f:allBoundNodes": {},
+            "f:quota": {
+              ".": {},
+              "f:pvcStorage": {}
+            }
+          }
+        },
+        "manager": "Kubernetes Java Client",
+        "operation": "Update",
+        "subresource": "status",
+        "time": "2025-07-06T06:22:54Z"
+      },
+      {
+        "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:spec": {
+            ".": {},
+            "f:binding": {
+              ".": {},
+              "f:imageHubs": {},
+              "f:nodeGroups": {},
+              "f:nodes": {}
+            },
+            "f:members": {},
+            "f:quota": {}
+          }
+        },
+        "manager": "Mozilla",
+        "operation": "Update",
+        "time": "2025-07-06T06:22:54Z"
+      }
+    ],
+    "name": "ten-project-001",
+    "resourceVersion": "44856739",
+    "uid": "61f7c240-e9b8-4c3d-ba07-0ac7b0b66b00"
+  },
+  "spec": {
+    "binding": {
+      "imageHubs": ["yshee-test"],
+      "nodeGroups": [],
+      "nodes": ["pnode4.idc1.ten1010.io", "vnode1.pnode6.idc1.ten1010.io"]
+    },
+    "members": [
+      {
+        "aipubUser": "pmadmin1",
+        "role": "project-developer"
+      },
+      {
+        "aipubUser": "testuser100",
+        "role": "project-developer"
+      }
+    ],
+    "quota": {}
+  },
+  "status": {
+    "allBoundAipubUsers": ["pmadmin1", "testuser100"],
+    "allBoundImageHubs": ["yshee-test"],
+    "allBoundNodeGroups": [],
+    "allBoundNodes": [
+      "pnode4.idc1.ten1010.io",
+      "vnode1.pnode6.idc1.ten1010.io"
+    ],
+    "quota": {
+      "pvcStorage": {}
+    }
+  }
+}

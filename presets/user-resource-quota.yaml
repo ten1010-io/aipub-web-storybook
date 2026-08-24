@@ -1,0 +1,11 @@
+apiVersion: aipub.ten1010.io/v1alpha1
+kind: UserResourceQuota
+metadata:
+  name: #username
+spec:
+  hard:
+    # requests.cpu: 5000m
+    # requests.memory: 20Gi
+    # limits.cpu: 10000m
+    # limits.memory: 100Gi
+    # limits.ten1010.io/gpu-block-1gb-a100: 10

@@ -1,0 +1,48 @@
+{
+  "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+  "kind": "ImageHub",
+  "metadata": {
+    "creationTimestamp": "2025-06-30T11:21:14Z",
+    "generation": 1,
+    "managedFields": [
+      {
+        "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:spec": {
+            ".": {},
+            "f:id": {}
+          }
+        },
+        "manager": "okhttp",
+        "operation": "Update",
+        "time": "2025-06-30T11:21:14Z"
+      },
+      {
+        "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:status": {
+            ".": {},
+            "f:allBoundAipubUsers": {},
+            "f:allBoundProjects": {}
+          }
+        },
+        "manager": "Kubernetes Java Client",
+        "operation": "Update",
+        "subresource": "status",
+        "time": "2025-07-06T06:22:23Z"
+      }
+    ],
+    "name": "yshee-test",
+    "resourceVersion": "44856603",
+    "uid": "96cf7e01-fc32-46aa-b934-fdd1389ea47f"
+  },
+  "spec": {
+    "id": "181"
+  },
+  "status": {
+    "allBoundAipubUsers": ["pmadmin1", "testuser100"],
+    "allBoundProjects": ["ten-project-001"]
+  }
+}

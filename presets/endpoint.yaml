@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: #string
+  namespace: #string
+#  annotations:  key: string
+#  labels:  key: string
+#subsets:
+#  - addresses:
+#      - hostname: string
+#        ip: string
+#        nodeName: string
+#        targetRef:
+#          apiVersion: string
+#          fieldPath: string
+#          kind: string
+#          name: string
+#          namespace: string
+#          resourceVersion: string
+#          uid: string
+#    notReadyAddresses:
+#      - hostname: string
+#        ip: string
+#        nodeName: string
+#        targetRef:
+#          apiVersion: string
+#          fieldPath: string
+#          kind: string
+#          name: string
+#          namespace: string
+#          resourceVersion: string
+#          uid: string
+#    ports:
+#      - appProtocol: string
+#        name: string
+#        port: int
+#        protocol: string

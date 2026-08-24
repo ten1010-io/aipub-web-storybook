@@ -1,0 +1,55 @@
+{
+  "apiVersion": "batch/v1",
+  "kind": "CronJob",
+  "metadata": {
+    "name": "mock-cron-job-1",
+    "namespace": "default",
+    "creationTimestamp": "2026-04-01T00:00:00Z",
+    "labels": {
+      "aipub.ten1010.io/username": "mock-user"
+    },
+    "annotations": {
+      "aipub.ten1010.io/readme": "Mock CronJob for MSW",
+      "aipub.ten1010.io/alarm-recipients": "mock-user"
+    }
+  },
+  "spec": {
+    "schedule": "*/5 * * * *",
+    "suspend": false,
+    "concurrencyPolicy": "Forbid",
+    "successfulJobsHistoryLimit": 3,
+    "failedJobsHistoryLimit": 1,
+    "jobTemplate": {
+      "metadata": {
+        "annotations": {
+          "aipub.ten1010.io/readme": "Job template readme"
+        }
+      },
+      "spec": {
+        "backoffLimit": 0,
+        "template": {
+          "spec": {
+            "containers": [
+              {
+                "name": "main",
+                "image": "busybox:latest",
+                "command": ["echo"],
+                "args": ["hello"],
+                "resources": {
+                  "limits": {
+                    "ten1010.io/resourceset-default": "1"
+                  }
+                }
+              }
+            ],
+            "restartPolicy": "Never"
+          }
+        }
+      }
+    }
+  },
+  "status": {
+    "lastScheduleTime": "2026-04-01T00:05:00Z",
+    "lastSuccessfulTime": "2026-04-01T00:05:30Z"
+  }
+}

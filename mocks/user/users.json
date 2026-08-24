@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "createdTimestamp": 1672531200000,
+      "credentials": [],
+      "email": "soohyun2@example.com",
+      "emailVerified": true,
+      "enabled": true,
+      "firstName": "Soohyun",
+      "id": "58363463-9f6e-4428-bb02-b2eb3c4adf60",
+      "lastName": "Kim",
+      "notBefore": 0,
+      "requiredActions": [],
+      "username": "soohyun2",
+      "attributes": {
+        "department": ["Engineering"],
+        "team": ["Backend"]
+      },
+      "roleMappings": []
+    },
+    {
+      "createdTimestamp": 1672617600000,
+      "credentials": [],
+      "email": "qaadmin@example.com",
+      "emailVerified": true,
+      "enabled": true,
+      "firstName": "QA",
+      "id": "0c386825-465f-4cfc-bd19-953ee1993293",
+      "lastName": "Admin",
+      "notBefore": 0,
+      "requiredActions": [],
+      "username": "qaadmin",
+      "attributes": {
+        "department": ["QA"],
+        "team": ["Testing"]
+      },
+      "roleMappings": []
+    },
+    {
+      "createdTimestamp": 1672704000000,
+      "credentials": [],
+      "email": "feadmin1@example.com",
+      "emailVerified": true,
+      "enabled": true,
+      "firstName": "Frontend",
+      "id": "ac545a0e-ef4c-46d4-8b94-eb7afc2fa96d",
+      "lastName": "Admin",
+      "notBefore": 0,
+      "requiredActions": [],
+      "username": "feadmin1",
+      "attributes": {
+        "department": ["Engineering"],
+        "team": ["Frontend"]
+      },
+      "roleMappings": []
+    },
+    {
+      "createdTimestamp": 1672790400000,
+      "credentials": [],
+      "email": "poadmin2@example.com",
+      "emailVerified": true,
+      "enabled": true,
+      "firstName": "Product",
+      "id": "8e035a32-b05e-4e1f-bd97-ce90d15563d4",
+      "lastName": "Admin",
+      "notBefore": 0,
+      "requiredActions": [],
+      "username": "poadmin2",
+      "attributes": {
+        "department": ["Product"],
+        "team": ["Management"]
+      },
+      "roleMappings": []
+    }
+  ],
+  "totalCount": 4,
+  "pageOffset": 0,
+  "pageSize": 500
+}

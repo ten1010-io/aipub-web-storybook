@@ -1,0 +1,76 @@
+{
+  "apiVersion": "aipub.ten1010.io/v1alpha1",
+  "kind": "ChainJob",
+  "metadata": {
+    "name": "mock-chain-job-1",
+    "namespace": "default",
+    "creationTimestamp": "2026-04-01T00:00:00Z",
+    "labels": {
+      "aipub.ten1010.io/username": "mock-user"
+    },
+    "annotations": {
+      "aipub.ten1010.io/readme": "Mock ChainJob for MSW",
+      "aipub.ten1010.io/alarm-recipients": "mock-user"
+    }
+  },
+  "spec": {
+    "suspend": false,
+    "startAt": "2026-04-01T00:10:00Z",
+    "activeDeadlineSeconds": 3600,
+    "ttlSecondsAfterFinished": 86400,
+    "steps": [
+      {
+        "name": "step-1",
+        "onFailure": "Abort",
+        "job": {
+          "metadata": {
+            "annotations": {
+              "front.aipub.ten1010.io/image-input-mode": "manual"
+            }
+          },
+          "spec": {
+            "backoffLimit": 0,
+            "template": {
+              "spec": {
+                "containers": [
+                  {
+                    "name": "step-1",
+                    "image": "busybox:latest",
+                    "command": ["echo"],
+                    "args": ["hello"],
+                    "resources": {
+                      "limits": {
+                        "ten1010.io/resourceset-default": "1"
+                      }
+                    }
+                  }
+                ],
+                "restartPolicy": "Never"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "status": {
+    "currentStepIndex": 0,
+    "startTime": "2026-04-01T00:10:00Z",
+    "conditions": [
+      {
+        "type": "Succeeded",
+        "status": "Unknown",
+        "reason": "Running",
+        "message": "Step in progress",
+        "lastTransitionTime": "2026-04-01T00:10:00Z"
+      }
+    ],
+    "steps": [
+      {
+        "index": 0,
+        "name": "step-1",
+        "phase": "Running"
+      }
+    ]
+  }
+}

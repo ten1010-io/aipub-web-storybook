@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  replicas: #int
+  selector:
+    matchLabels:
+      # key: value
+  template:
+    metadata:
+      labels:
+        # key: value
+    spec:
+      # nodeSelector:
+      #   key: value
+      # tolerations:
+      #   - key: string
+      #     operator: string
+      #     value: string
+      #     effect: string
+      # volumes:
+      #   - name: string
+      #     persistentVolumeClaim:
+      #       claimName: string
+      restartPolicy: Always # Always, OnFailure, Never
+      containers:
+        - name: #string
+          image: #string
+          # imagePullPolicy: Always # Always, Never, IfNotPresent
+          # command:
+          #   - string
+          # args:
+          #   - string
+          # env:
+          #   - name: string
+          #     value: string
+          # resources:
+          #   limits:
+          #     key: value
+          #   requests:
+          #     key: value
+          # ports:
+          #   - containerPort: int
+          #     protocol: string
+          #     name: string
+          # volumeMounts:
+          #   - name: string
+          #     mountPath: string

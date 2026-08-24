@@ -1,0 +1,2053 @@
+{
+  "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+  "items": [
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-07-01T11:10:47Z",
+        "generation": 5,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-04T14:53:03Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-04T15:14:54Z"
+          }
+        ],
+        "name": "abc",
+        "resourceVersion": "44203548",
+        "uid": "8fd5c756-b688-47d3-8d02-c0a6299ffa80"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["yshee-test2"],
+          "nodeGroups": [],
+          "nodes": ["pnode4.idc1.ten1010.io", "vnode1.pnode6.idc1.ten1010.io"]
+        },
+        "members": [
+          {
+            "aipubUser": "adminuser",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "adminuser2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "changepw",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "testuser100",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [
+          "adminuser",
+          "adminuser2",
+          "changepw",
+          "testuser100"
+        ],
+        "allBoundImageHubs": ["yshee-test2"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode6.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"project.aipub.ten1010.io/v1alpha1\",\"kind\":\"Project\",\"metadata\":{\"annotations\":{},\"name\":\"common\"},\"spec\":{\"binding\":{\"imageHubs\":[\"common\"],\"nodeGroups\":null,\"nodes\":[\"vnode9.pnode6.idc1.ten1010.io\"]},\"members\":[{\"aipubUser\":\"pmadmin3\",\"role\":\"project-manager\"}],\"quota\":null}}\n"
+        },
+        "creationTimestamp": "2025-05-30T01:36:44Z",
+        "generation": 5,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                }
+              },
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                }
+              }
+            },
+            "manager": "kubectl-client-side-apply",
+            "operation": "Update",
+            "time": "2025-05-30T01:36:44Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                "f:members": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-04T14:53:32Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-04T15:50:57Z"
+          }
+        ],
+        "name": "common",
+        "resourceVersion": "44213029",
+        "uid": "4db91933-9213-4701-afec-74216df03645"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["common"],
+          "nodeGroups": [],
+          "nodes": ["vnode9.pnode6.idc1.ten1010.io"]
+        },
+        "members": [
+          {
+            "aipubUser": "feadmin1",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "feadmin2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "pmadmin3",
+            "role": "project-manager"
+          },
+          {
+            "aipubUser": "soohyun2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "testuser100",
+            "role": "project-developer"
+          }
+        ]
+      },
+      "status": {
+        "allBoundAipubUsers": [
+          "feadmin1",
+          "feadmin2",
+          "pmadmin3",
+          "soohyun2",
+          "testuser100"
+        ],
+        "allBoundImageHubs": ["common"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": ["vnode9.pnode6.idc1.ten1010.io"],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-07-02T01:45:47Z",
+        "generation": 10,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-02T11:10:55Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {
+                    ".": {},
+                    "f:limit": {},
+                    "f:used": {}
+                  }
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-03T00:54:57Z"
+          }
+        ],
+        "name": "def",
+        "resourceVersion": "43563641",
+        "uid": "817688e1-fb7f-4fe1-a854-8e1976aa5391"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": [],
+          "nodeGroups": [],
+          "nodes": []
+        },
+        "members": [],
+        "quota": {
+          "pvcStorage": "10Gi"
+        }
+      },
+      "status": {
+        "allBoundAipubUsers": [],
+        "allBoundImageHubs": [],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [],
+        "quota": {
+          "pvcStorage": {
+            "limit": "10Gi",
+            "used": "0"
+          }
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-06-18T05:20:42Z",
+        "deletionGracePeriodSeconds": 0,
+        "deletionTimestamp": "2025-06-18T05:24:33Z",
+        "finalizers": ["ten1010.io/finalizer"],
+        "generation": 2,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-06-18T05:20:42Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-18T05:20:42Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"ten1010.io/finalizer\"": {}
+                }
+              }
+            },
+            "manager": "kubectl-edit",
+            "operation": "Update",
+            "time": "2025-06-18T05:24:22Z"
+          }
+        ],
+        "name": "del-test",
+        "resourceVersion": "38512313",
+        "uid": "7155164c-4e85-4252-b5db-36105780d8e6"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": [],
+          "nodeGroups": [],
+          "nodes": []
+        },
+        "members": [],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [],
+        "allBoundImageHubs": [],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-07-09T01:32:22Z",
+        "generation": 2,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-09T01:32:22Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-09T01:32:32Z"
+          }
+        ],
+        "name": "haha",
+        "resourceVersion": "46046007",
+        "uid": "6b3e5591-7cda-4129-8538-289efd84b436"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": [],
+          "nodeGroups": [],
+          "nodes": []
+        },
+        "members": [
+          {
+            "aipubUser": "ghg0106",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [],
+        "allBoundImageHubs": [],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-07-07T10:46:51Z",
+        "generation": 3,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-07T10:47:08Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-07T10:47:08Z"
+          }
+        ],
+        "name": "po-docs",
+        "resourceVersion": "45363885",
+        "uid": "243de583-3793-4a6c-a08b-e3b15d8e2fa4"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["po-docs"],
+          "nodeGroups": [],
+          "nodes": [
+            "pnode4.idc1.ten1010.io",
+            "vnode1.pnode6.idc1.ten1010.io",
+            "vnode1.pnode8.idc1.ten1010.io",
+            "vnode9.pnode6.idc1.ten1010.io"
+          ]
+        },
+        "members": [],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [],
+        "allBoundImageHubs": ["po-docs"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode6.idc1.ten1010.io",
+          "vnode1.pnode8.idc1.ten1010.io",
+          "vnode9.pnode6.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-06-18T07:43:34Z",
+        "generation": 10,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-06-18T08:48:12Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-18T08:48:12Z"
+          }
+        ],
+        "name": "prj-test",
+        "resourceVersion": "38567069",
+        "uid": "89243dc7-cfa6-4fce-8514-c4e8e73345f5"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["common"],
+          "nodeGroups": [],
+          "nodes": [
+            "vnode1.pnode6.idc1.ten1010.io",
+            "vnode9.pnode6.idc1.ten1010.io"
+          ]
+        },
+        "members": [
+          {
+            "aipubUser": "adminuser",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "adminuser2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "changepw",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "chillguy",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "creationtest",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "disdormant",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [
+          "adminuser",
+          "adminuser2",
+          "changepw",
+          "chillguy",
+          "creationtest",
+          "disdormant"
+        ],
+        "allBoundImageHubs": ["common"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "vnode1.pnode6.idc1.ten1010.io",
+          "vnode9.pnode6.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-06-12T04:55:57Z",
+        "generation": 24,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-24T09:11:05Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-06-24T09:39:14Z"
+          }
+        ],
+        "name": "proj-yunju-2",
+        "resourceVersion": "40659833",
+        "uid": "3db16de8-2f06-47d0-aa74-e29938b3b34d"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": [
+            "yunju-imagehub-private",
+            "yunju-imagehub-private.access"
+          ],
+          "nodeGroups": [],
+          "nodes": [
+            "pnode4.idc1.ten1010.io",
+            "vnode1.pnode8.idc1.ten1010.io",
+            "vnode9.pnode6.idc1.ten1010.io"
+          ]
+        },
+        "members": [
+          {
+            "aipubUser": "dormant3",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "failtest",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "feadmin1",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "feadmin2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "geunjae",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "pmadmin1",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "pmadmin2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "pmadmin3",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "poadmin1",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "poadmin2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "poyunju",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "qaadmin",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [
+          "dormant3",
+          "failtest",
+          "feadmin1",
+          "feadmin2",
+          "geunjae",
+          "pmadmin1",
+          "pmadmin2",
+          "pmadmin3",
+          "poadmin1",
+          "poadmin2",
+          "poyunju",
+          "qaadmin"
+        ],
+        "allBoundImageHubs": [],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode8.idc1.ten1010.io",
+          "vnode9.pnode6.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"project.aipub.ten1010.io/v1alpha1\",\"kind\":\"Project\",\"metadata\":{\"annotations\":{},\"name\":\"proj1\"},\"spec\":{\"binding\":{\"imageHubs\":[\"common\"]},\"members\":[{\"aipubUser\":\"yongjun2\",\"role\":\"project-manager\"},{\"aipubUser\":\"yongjun\",\"role\":\"project-developer\"}],\"quota\":{\"pvcStorage\":\"500Gi\"}}}\n"
+        },
+        "creationTimestamp": "2025-06-02T07:28:44Z",
+        "generation": 214,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                }
+              },
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:nodeGroups": {}
+                },
+                "f:quota": {}
+              }
+            },
+            "manager": "kubectl-client-side-apply",
+            "operation": "Update",
+            "time": "2025-06-02T07:28:44Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-12T04:00:32Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                "f:binding": {
+                  "f:imageHubs": {},
+                  "f:nodes": {}
+                },
+                "f:members": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-12T04:00:32Z"
+          }
+        ],
+        "name": "proj1",
+        "resourceVersion": "47624127",
+        "uid": "393af017-6d7d-4487-b78a-c058c0423914"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["aipub-report", "common", "yshee-test2"],
+          "nodeGroups": [],
+          "nodes": [
+            "pnode4.idc1.ten1010.io",
+            "vnode1.pnode6.idc1.ten1010.io",
+            "vnode1.pnode8.idc1.ten1010.io"
+          ]
+        },
+        "members": [
+          {
+            "aipubUser": "changepw",
+            "role": "project-manager"
+          },
+          {
+            "aipubUser": "chillguy",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "dormant1",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "feadmin1",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "feadmin2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "feadmin3",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "geunjae",
+            "role": "project-manager"
+          },
+          {
+            "aipubUser": "ghg0106",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "jungwontest",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "poadmin2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "poyunju",
+            "role": "project-manager"
+          },
+          {
+            "aipubUser": "qaadmin",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "seunghee",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "seunghoalarm",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "sunghwan",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "testuser100",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "yejikim",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "yejinim",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "youngjunadmin",
+            "role": "project-manager"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [
+          "changepw",
+          "chillguy",
+          "dormant1",
+          "feadmin1",
+          "feadmin2",
+          "feadmin3",
+          "geunjae",
+          "ghg0106",
+          "jungwontest",
+          "poadmin2",
+          "poyunju",
+          "qaadmin",
+          "seunghee",
+          "seunghoalarm",
+          "sunghwan",
+          "testuser100",
+          "yejikim",
+          "yejinim",
+          "youngjunadmin"
+        ],
+        "allBoundImageHubs": ["aipub-report", "common", "yshee-test2"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode6.idc1.ten1010.io",
+          "vnode1.pnode8.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"project.aipub.ten1010.io/v1alpha1\",\"kind\":\"Project\",\"metadata\":{\"annotations\":{},\"name\":\"proj2\"},\"spec\":{\"binding\":{\"imageHubs\":[\"common\"]},\"members\":[{\"aipubUser\":\"yongjun2\",\"role\":\"project-manager\"},{\"aipubUser\":\"yongjun\",\"role\":\"project-developer\"}],\"quota\":{\"pvcStorage\":\"500Gi\"}}}\n"
+        },
+        "creationTimestamp": "2025-06-02T07:28:44Z",
+        "generation": 13,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                }
+              },
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "kubectl-client-side-apply",
+            "operation": "Update",
+            "time": "2025-06-02T07:28:44Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                "f:binding": {
+                  "f:imageHubs": {}
+                },
+                "f:members": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-26T07:44:37Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {
+                    ".": {},
+                    "f:limit": {},
+                    "f:used": {}
+                  }
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-06-30T11:20:43Z"
+          }
+        ],
+        "name": "proj2",
+        "resourceVersion": "42769846",
+        "uid": "79fa5ea8-83e9-4a27-b273-59fde84ac981"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": [
+            "common",
+            "dfsaf",
+            "seunghee-imagehub",
+            "yunju-imagehub-private.access"
+          ],
+          "nodeGroups": [],
+          "nodes": []
+        },
+        "members": [
+          {
+            "aipubUser": "geunjae",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "poadmin2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "poyunju",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "yunjunim",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {
+          "pvcStorage": "500Gi"
+        }
+      },
+      "status": {
+        "allBoundAipubUsers": ["geunjae", "poadmin2", "poyunju", "yunjunim"],
+        "allBoundImageHubs": ["common"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [],
+        "quota": {
+          "pvcStorage": {
+            "limit": "500Gi",
+            "used": "0"
+          }
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-07-02T07:39:59Z",
+        "generation": 3,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-02T07:40:16Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-02T07:40:59Z"
+          }
+        ],
+        "name": "qwer",
+        "resourceVersion": "43344273",
+        "uid": "c06c6c65-ac55-446f-9640-17db4a0782e3"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": [],
+          "nodeGroups": [],
+          "nodes": [
+            "pnode4.idc1.ten1010.io",
+            "vnode1.pnode6.idc1.ten1010.io",
+            "vnode1.pnode8.idc1.ten1010.io"
+          ]
+        },
+        "members": [
+          {
+            "aipubUser": "changepw",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "chillguy",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "creationtest",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": ["changepw", "chillguy", "creationtest"],
+        "allBoundImageHubs": [],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode6.idc1.ten1010.io",
+          "vnode1.pnode8.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-07-10T08:32:31Z",
+        "generation": 1,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-10T08:32:31Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-10T08:33:31Z"
+          }
+        ],
+        "name": "qwerqwer",
+        "resourceVersion": "46577262",
+        "uid": "89ddb1ac-4c1a-4969-b886-412e6955cb96"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": [],
+          "nodeGroups": [],
+          "nodes": []
+        },
+        "members": [],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [],
+        "allBoundImageHubs": [],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-06-26T05:07:28Z",
+        "generation": 17,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-06-27T03:44:34Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-27T14:49:50Z"
+          }
+        ],
+        "name": "ten-project",
+        "resourceVersion": "41797632",
+        "uid": "e13f46bb-515c-4932-98ee-449b41f01295"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["common"],
+          "nodeGroups": [],
+          "nodes": ["pnode4.idc1.ten1010.io", "vnode9.pnode6.idc1.ten1010.io"]
+        },
+        "members": [
+          {
+            "aipubUser": "chillguy",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "hyungil",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": ["chillguy", "hyungil"],
+        "allBoundImageHubs": ["common"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode9.pnode6.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-07-04T07:23:47Z",
+        "generation": 20,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-06T06:22:54Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-06T06:22:54Z"
+          }
+        ],
+        "name": "ten-project-001",
+        "resourceVersion": "44856739",
+        "uid": "61f7c240-e9b8-4c3d-ba07-0ac7b0b66b00"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["yshee-test"],
+          "nodeGroups": [],
+          "nodes": ["pnode4.idc1.ten1010.io", "vnode1.pnode6.idc1.ten1010.io"]
+        },
+        "members": [
+          {
+            "aipubUser": "pmadmin1",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "testuser100",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": ["pmadmin1", "testuser100"],
+        "allBoundImageHubs": ["yshee-test"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode6.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-07-04T06:12:56Z",
+        "generation": 6,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-06T06:28:07Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-09T11:15:31Z"
+          }
+        ],
+        "name": "ten-project-sample",
+        "resourceVersion": "46216581",
+        "uid": "b76c8c8f-f947-4219-a891-a8805abb3a6c"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["common"],
+          "nodeGroups": [],
+          "nodes": ["pnode4.idc1.ten1010.io"]
+        },
+        "members": [],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [],
+        "allBoundImageHubs": ["common"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": ["pnode4.idc1.ten1010.io"],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-05-30T05:04:09Z",
+        "generation": 16,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-01T06:54:29Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-01T06:54:29Z"
+          }
+        ],
+        "name": "test",
+        "resourceVersion": "43045855",
+        "uid": "4c2eb5ac-b7fa-46b0-b257-e08c04c8222b"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["common"],
+          "nodeGroups": [],
+          "nodes": []
+        },
+        "members": [],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [],
+        "allBoundImageHubs": ["common"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-06-30T01:55:35Z",
+        "generation": 10,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-30T09:15:17Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-06-30T09:25:22Z"
+          }
+        ],
+        "name": "test-0630-1",
+        "resourceVersion": "42742588",
+        "uid": "af148787-efcf-4141-88e6-64a40c71e6f9"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["common", "dummy"],
+          "nodeGroups": [],
+          "nodes": [
+            "pnode4.idc1.ten1010.io",
+            "vnode1.pnode6.idc1.ten1010.io",
+            "vnode1.pnode8.idc1.ten1010.io"
+          ]
+        },
+        "members": [
+          {
+            "aipubUser": "adminuser2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "changepw",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "feadmin2",
+            "role": "project-manager"
+          },
+          {
+            "aipubUser": "qaadmin",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": ["adminuser2", "changepw", "feadmin2", "qaadmin"],
+        "allBoundImageHubs": ["common"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode6.idc1.ten1010.io",
+          "vnode1.pnode8.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-06-18T08:17:18Z",
+        "generation": 25,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-06-23T08:40:49Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-06-23T09:41:50Z"
+          }
+        ],
+        "name": "test-ssh",
+        "resourceVersion": "40317101",
+        "uid": "6b2c3bb2-a3f0-4ba0-af84-ae4aa6127199"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["common", "yunju-imagehub"],
+          "nodeGroups": [],
+          "nodes": [
+            "pnode4.idc1.ten1010.io",
+            "vnode1.pnode6.idc1.ten1010.io",
+            "vnode1.pnode8.idc1.ten1010.io"
+          ]
+        },
+        "members": [
+          {
+            "aipubUser": "changepw",
+            "role": "project-manager"
+          },
+          {
+            "aipubUser": "chillguy",
+            "role": "project-manager"
+          },
+          {
+            "aipubUser": "disdormant",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "dormant1",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "dormant3",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "feadmin2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "gpuquota2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "seunghee",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "testuser6",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [
+          "changepw",
+          "chillguy",
+          "disdormant",
+          "dormant1",
+          "dormant3",
+          "feadmin2",
+          "gpuquota2",
+          "seunghee",
+          "testuser6"
+        ],
+        "allBoundImageHubs": ["common"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode6.idc1.ten1010.io",
+          "vnode1.pnode8.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-07-05T11:35:39Z",
+        "generation": 5,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-05T11:36:16Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-05T11:36:39Z"
+          }
+        ],
+        "name": "yshee-docs-test",
+        "resourceVersion": "44525625",
+        "uid": "61c233b9-0f15-4a35-a6d6-62ddaec91e38"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": ["yshee-test2"],
+          "nodeGroups": [],
+          "nodes": [
+            "pnode4.idc1.ten1010.io",
+            "vnode1.pnode6.idc1.ten1010.io",
+            "vnode1.pnode8.idc1.ten1010.io",
+            "vnode9.pnode6.idc1.ten1010.io"
+          ]
+        },
+        "members": [
+          {
+            "aipubUser": "qaadmin",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": ["qaadmin"],
+        "allBoundImageHubs": ["yshee-test2"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode6.idc1.ten1010.io",
+          "vnode1.pnode8.idc1.ten1010.io",
+          "vnode9.pnode6.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    },
+    {
+      "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+      "kind": "Project",
+      "metadata": {
+        "creationTimestamp": "2025-06-27T06:00:11Z",
+        "generation": 12,
+        "managedFields": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                ".": {},
+                "f:allBoundAipubUsers": {},
+                "f:allBoundImageHubs": {},
+                "f:allBoundNodeGroups": {},
+                "f:allBoundNodes": {},
+                "f:quota": {
+                  ".": {},
+                  "f:pvcStorage": {}
+                }
+              }
+            },
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-04T13:40:20Z"
+          },
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:spec": {
+                ".": {},
+                "f:binding": {
+                  ".": {},
+                  "f:imageHubs": {},
+                  "f:nodeGroups": {},
+                  "f:nodes": {}
+                },
+                "f:members": {},
+                "f:quota": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-09T07:42:07Z"
+          }
+        ],
+        "name": "yshee-test",
+        "resourceVersion": "46155405",
+        "uid": "85c8f7eb-4507-4d14-8b91-32a889ac9834"
+      },
+      "spec": {
+        "binding": {
+          "imageHubs": [
+            "aipub-monitoring-stack",
+            "aipub-report",
+            "common",
+            "dummy",
+            "efk",
+            "yshee-test2"
+          ],
+          "nodeGroups": [],
+          "nodes": [
+            "pnode4.idc1.ten1010.io",
+            "vnode1.pnode6.idc1.ten1010.io",
+            "vnode1.pnode8.idc1.ten1010.io",
+            "vnode9.pnode6.idc1.ten1010.io"
+          ]
+        },
+        "members": [
+          {
+            "aipubUser": "adminuser2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "changepw",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "creationtest",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "disdormant",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "dormant1",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "dormant2",
+            "role": "project-developer"
+          },
+          {
+            "aipubUser": "seunghee",
+            "role": "project-developer"
+          }
+        ],
+        "quota": {}
+      },
+      "status": {
+        "allBoundAipubUsers": [
+          "adminuser2",
+          "changepw",
+          "creationtest",
+          "disdormant",
+          "dormant1",
+          "dormant2",
+          "seunghee"
+        ],
+        "allBoundImageHubs": ["aipub-report", "common", "yshee-test2"],
+        "allBoundNodeGroups": [],
+        "allBoundNodes": [
+          "pnode4.idc1.ten1010.io",
+          "vnode1.pnode6.idc1.ten1010.io",
+          "vnode1.pnode8.idc1.ten1010.io",
+          "vnode9.pnode6.idc1.ten1010.io"
+        ],
+        "quota": {
+          "pvcStorage": {}
+        }
+      }
+    }
+  ],
+  "kind": "ProjectList",
+  "metadata": {
+    "continue": "",
+    "resourceVersion": "48711908"
+  }
+}

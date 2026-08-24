@@ -1,0 +1,239 @@
+{
+  "kind": "UserResourceQuotaList",
+  "apiVersion": "aipub.ten1010.io/v1alpha1",
+  "metadata": {
+    "resourceVersion": "46657590"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "user-quota-developer-1",
+        "namespace": "default",
+        "creationTimestamp": "2024-01-15T10:30:00Z",
+        "labels": {
+          "user": "developer-1",
+          "project": "ai-project"
+        }
+      },
+      "spec": {
+        "user": "developer-1",
+        "hard": {
+          "pods": "20",
+          "requests.cpu": "8",
+          "requests.memory": "16Gi",
+          "limits.cpu": "8",
+          "limits.memory": "16Gi",
+          "persistentvolumeclaims": "10",
+          "requests.storage": "100Gi",
+          "request.nvidia.com/gpu": "2"
+        }
+      },
+      "status": {
+        "hard": {
+          "pods": "20",
+          "requests.cpu": "8",
+          "requests.memory": "16Gi",
+          "limits.cpu": "8",
+          "limits.memory": "16Gi",
+          "persistentvolumeclaims": "10",
+          "requests.storage": "100Gi",
+          "request.nvidia.com/gpu": "2"
+        },
+        "used": {
+          "pods": "5",
+          "requests.cpu": "2",
+          "requests.memory": "4Gi",
+          "limits.cpu": "3",
+          "limits.memory": "6Gi",
+          "persistentvolumeclaims": "3",
+          "requests.storage": "25Gi",
+          "request.nvidia.com/gpu": "1"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "name": "user-quota-researcher-1",
+        "namespace": "research",
+        "creationTimestamp": "2024-01-20T14:15:00Z",
+        "labels": {
+          "user": "researcher-1",
+          "project": "ml-research"
+        }
+      },
+      "spec": {
+        "user": "researcher-1",
+        "hard": {
+          "pods": "50",
+          "requests.cpu": "16",
+          "requests.memory": "32Gi",
+          "limits.cpu": "16",
+          "limits.memory": "32Gi",
+          "persistentvolumeclaims": "20",
+          "requests.storage": "500Gi",
+          "request.nvidia.com/gpu": "8"
+        }
+      },
+      "status": {
+        "hard": {
+          "pods": "50",
+          "requests.cpu": "16",
+          "requests.memory": "32Gi",
+          "limits.cpu": "16",
+          "limits.memory": "32Gi",
+          "persistentvolumeclaims": "20",
+          "requests.storage": "500Gi",
+          "request.nvidia.com/gpu": "8"
+        },
+        "used": {
+          "pods": "12",
+          "requests.cpu": "8",
+          "requests.memory": "16Gi",
+          "limits.cpu": "10",
+          "limits.memory": "20Gi",
+          "persistentvolumeclaims": "8",
+          "requests.storage": "200Gi",
+          "request.nvidia.com/gpu": "4"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "name": "user-quota-admin-1",
+        "namespace": "admin",
+        "creationTimestamp": "2024-01-10T09:00:00Z",
+        "labels": {
+          "user": "admin-1",
+          "project": "system-admin"
+        }
+      },
+      "spec": {
+        "user": "admin-1",
+        "hard": {
+          "pods": "100",
+          "requests.cpu": "32",
+          "requests.memory": "64Gi",
+          "limits.cpu": "32",
+          "limits.memory": "64Gi",
+          "persistentvolumeclaims": "50",
+          "requests.storage": "1Ti",
+          "request.nvidia.com/gpu": "16"
+        }
+      },
+      "status": {
+        "hard": {
+          "pods": "100",
+          "requests.cpu": "32",
+          "requests.memory": "64Gi",
+          "limits.cpu": "32",
+          "limits.memory": "64Gi",
+          "persistentvolumeclaims": "50",
+          "requests.storage": "1Ti",
+          "request.nvidia.com/gpu": "16"
+        },
+        "used": {
+          "pods": "25",
+          "requests.cpu": "12",
+          "requests.memory": "24Gi",
+          "limits.cpu": "15",
+          "limits.memory": "30Gi",
+          "persistentvolumeclaims": "15",
+          "requests.storage": "400Gi",
+          "request.nvidia.com/gpu": "6"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "name": "user-quota-student-1",
+        "namespace": "education",
+        "creationTimestamp": "2024-02-01T11:45:00Z",
+        "labels": {
+          "user": "student-1",
+          "project": "ai-course"
+        }
+      },
+      "spec": {
+        "user": "student-1",
+        "hard": {
+          "pods": "10",
+          "requests.cpu": "4",
+          "requests.memory": "8Gi",
+          "limits.cpu": "4",
+          "limits.memory": "8Gi",
+          "persistentvolumeclaims": "5",
+          "requests.storage": "50Gi",
+          "request.nvidia.com/gpu": "1"
+        }
+      },
+      "status": {
+        "hard": {
+          "pods": "10",
+          "requests.cpu": "4",
+          "requests.memory": "8Gi",
+          "limits.cpu": "4",
+          "limits.memory": "8Gi",
+          "persistentvolumeclaims": "5",
+          "requests.storage": "50Gi",
+          "request.nvidia.com/gpu": "1"
+        },
+        "used": {
+          "pods": "2",
+          "requests.cpu": "1",
+          "requests.memory": "2Gi",
+          "limits.cpu": "1",
+          "limits.memory": "2Gi",
+          "persistentvolumeclaims": "1",
+          "requests.storage": "10Gi",
+          "request.nvidia.com/gpu": "0"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "name": "user-quota-data-scientist-1",
+        "namespace": "analytics",
+        "creationTimestamp": "2024-01-25T16:20:00Z",
+        "labels": {
+          "user": "data-scientist-1",
+          "project": "big-data-project"
+        }
+      },
+      "spec": {
+        "user": "data-scientist-1",
+        "hard": {
+          "pods": "30",
+          "requests.cpu": "12",
+          "requests.memory": "24Gi",
+          "limits.cpu": "12",
+          "limits.memory": "24Gi",
+          "persistentvolumeclaims": "15",
+          "requests.storage": "300Gi",
+          "request.nvidia.com/gpu": "4"
+        }
+      },
+      "status": {
+        "hard": {
+          "pods": "30",
+          "requests.cpu": "12",
+          "requests.memory": "24Gi",
+          "limits.cpu": "12",
+          "limits.memory": "24Gi",
+          "persistentvolumeclaims": "15",
+          "requests.storage": "300Gi",
+          "request.nvidia.com/gpu": "4"
+        },
+        "used": {
+          "pods": "8",
+          "requests.cpu": "6",
+          "requests.memory": "12Gi",
+          "limits.cpu": "7",
+          "limits.memory": "14Gi",
+          "persistentvolumeclaims": "6",
+          "requests.storage": "120Gi",
+          "request.nvidia.com/gpu": "2"
+        }
+      }
+    }
+  ]
+}

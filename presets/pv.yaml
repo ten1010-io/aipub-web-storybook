@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  capacity:
+    storage: 1Gi
+  volumeMode: Filesystem # Filesystem, Block
+  accessModes:
+    - ReadWriteOnce # ReadWriteOnce, ReadOnlyMany, ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain # Retain, Delete, Recycle
+  # storageClassName: string
+  # nodeAffinity:
+  #   required:
+  #     nodeSelectorTerms:
+  #       - matchExpressions:
+  #           - key: string
+  #             operator: In # In, NotIn, Exists, DoesNotExist, Gt, Lt
+  #             values:
+  #               - string
+  nfs:
+    server: #string
+    path: #string
+    readOnly: #boolean
+  # hostPath:
+  #   path: string
+  #   type: DirectoryOrCreate # DirectoryOrCreate, Directory, FileOrCreate, File, Socket, CharDevice, BlockDevice
+  # local:
+  #   path: string

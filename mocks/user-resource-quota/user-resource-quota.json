@@ -1,0 +1,48 @@
+{
+  "kind": "UserResourceQuota",
+  "apiVersion": "aipub.ten1010.io/v1alpha1",
+  "metadata": {
+    "name": "user-quota-developer-1",
+    "namespace": "default",
+    "creationTimestamp": "2024-01-15T10:30:00Z",
+    "labels": {
+      "user": "developer-1",
+      "project": "ai-project"
+    }
+  },
+  "spec": {
+    "user": "developer-1",
+    "hard": {
+      "pods": "20",
+      "requests.cpu": "8",
+      "requests.memory": "16Gi",
+      "limits.cpu": "8",
+      "limits.memory": "16Gi",
+      "persistentvolumeclaims": "10",
+      "requests.storage": "100Gi",
+      "request.nvidia.com/gpu": "2"
+    }
+  },
+  "status": {
+    "hard": {
+      "pods": "20",
+      "requests.cpu": "8",
+      "requests.memory": "16Gi",
+      "limits.cpu": "8",
+      "limits.memory": "16Gi",
+      "persistentvolumeclaims": "10",
+      "requests.storage": "100Gi",
+      "request.nvidia.com/gpu": "2"
+    },
+    "used": {
+      "pods": "5",
+      "requests.cpu": "2",
+      "requests.memory": "4Gi",
+      "limits.cpu": "3",
+      "limits.memory": "6Gi",
+      "persistentvolumeclaims": "3",
+      "requests.storage": "25Gi",
+      "request.nvidia.com/gpu": "1"
+    }
+  }
+}

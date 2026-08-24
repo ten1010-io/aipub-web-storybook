@@ -1,0 +1,1 @@
+import{r as t}from"./iframe-D1zcNpR6.js";const o={theme:"system",resolvedTheme:"light",setTheme:()=>null,colorTheme:"default",setColorTheme:()=>null},r=t.createContext(o);function n(){const e=t.useContext(r);if(e===void 0)throw new Error("useTheme must be used within a ThemeProvider");return e}export{n as u};

@@ -1,0 +1,40 @@
+{
+  "isAuthenticated": true,
+  "userType": "OAUTH2",
+  "userId": "e8dffd6e-ab43-49df-a341-087ef347ed7a",
+  "username": "feadmin2",
+  "roles": [
+    "default-roles-k8s",
+    "aipub-member",
+    "aipub-admin",
+    "offline_access",
+    "uma_authorization"
+  ],
+  "user": {
+    "id": "e8dffd6e-ab43-49df-a341-087ef347ed7a",
+    "username": "feadmin2",
+    "createdTimestamp": 1744224027119,
+    "lastName": "fe",
+    "firstName": "admin2",
+    "email": "fe-admin2@ten1010.io",
+    "enabled": true,
+    "emailVerified": true,
+    "notBefore": 0,
+    "credentials": [],
+    "requiredActions": [],
+    "attributes": {
+      "bookmarks": [
+        "ingress",
+        "ClusterRoles",
+        "CronJobs",
+        "Pods",
+        "GPUConfigs",
+        "Nodes"
+      ],
+      "harborUserId": ["40"],
+      "passwordChangeGracePeriod": ["2025-08-19T04:00:06.281Z"],
+      "additionalInfo": ["잘 봐주세요!"],
+      "namespaces": ["fe", "seunghee-test"]
+    }
+  }
+}

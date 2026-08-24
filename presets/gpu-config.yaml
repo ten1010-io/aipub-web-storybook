@@ -1,0 +1,17 @@
+apiVersion: coaster.ten1010.io/v1alpha1
+kind: GPUConfig
+metadata:
+  name: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  gpus:
+  # - gpuIndex: 0
+  #   migCount: int
+  #   type: Normal
+  # - gpuIndex: 1
+  #   type: Normal
+  # - gpuIndex: 2
+  #   type: Block

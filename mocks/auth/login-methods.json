@@ -1,0 +1,11 @@
+{
+  "local": { "enabled": true, "loginUrl": "/api/v1alpha1/login" },
+  "ldap": { "enabled": true, "loginUrl": "/api/auth/login/ldap" },
+  "oidcProviders": [
+    {
+      "registrationId": "keycloak",
+      "displayName": "Keycloak",
+      "loginUrl": "/oauth2/authorization/keycloak"
+    }
+  ]
+}

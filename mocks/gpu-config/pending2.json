@@ -1,0 +1,32 @@
+{
+  "apiVersion": "coaster.ten1010.io/v1alpha1",
+  "kind": "GPUConfig",
+  "metadata": {
+    "name": "vnode1.pnode6.idc1.ten1010.io",
+    "generation": 3,
+    "creationTimestamp": "2025-05-07T06:55:42Z"
+  },
+  "spec": {
+    "gpus": [
+      {
+        "gpuIndex": 0,
+        "migCount": 5,
+        "type": "Normal"
+      }
+    ]
+  },
+  "status": {
+    "completionCondition": {
+      "message": "current: {\"0\": null}, desired: {\"0\": 5}",
+      "reason": "MIGSetupNotCompleted",
+      "status": false,
+      "timestamp": "2025-05-09T08:25:13.122744+00:00"
+    },
+    "gpus": [
+      {
+        "gpuIndex": 0,
+        "type": "Normal"
+      }
+    ]
+  }
+}

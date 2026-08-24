@@ -1,0 +1,1 @@
+function a(t){const n=t.replace(/\s+/g,""),r=n.match(/^(\d+)([^\d].*)$/);if(r){const u=Number(r[1]),e=r[2];return{value:u,unit:e}}else return Number.isNaN(Number(n))?{value:0,unit:n}:{value:Number(n),unit:""}}function i(t,n="-"){return t!=null&&t!==""?t:n}function c(t){return String(i(t,"-"))}export{c as o,a as p};

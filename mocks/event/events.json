@@ -1,0 +1,220 @@
+{
+  "kind": "EventList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "12345"
+  },
+  "items": [
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "pod-started.17a9b8c9d0e1f2g3",
+        "namespace": "default",
+        "creationTimestamp": "2025-01-24T06:30:00Z"
+      },
+      "firstTimestamp": "2025-01-24T06:30:00Z",
+      "lastTimestamp": "2025-01-24T06:30:00Z",
+      "count": 1,
+      "reason": "Started",
+      "message": "Started container nginx",
+      "type": "Normal",
+      "source": {
+        "component": "kubelet",
+        "host": "node-1"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "nginx-deployment-7c79c4bf97-abc12",
+        "uid": "550e8400-e29b-41d4-a716-446655440000",
+        "apiVersion": "v1",
+        "resourceVersion": "12340"
+      }
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "pod-scheduled.17a9b8c9d0e1f2g4",
+        "namespace": "default",
+        "creationTimestamp": "2025-01-24T06:29:50Z"
+      },
+      "firstTimestamp": "2025-01-24T06:29:50Z",
+      "lastTimestamp": "2025-01-24T06:29:50Z",
+      "count": 1,
+      "reason": "Scheduled",
+      "message": "Successfully assigned default/nginx-deployment-7c79c4bf97-abc12 to node-1",
+      "type": "Normal",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "nginx-deployment-7c79c4bf97-abc12",
+        "uid": "550e8400-e29b-41d4-a716-446655440000",
+        "apiVersion": "v1",
+        "resourceVersion": "12335"
+      }
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "pod-failed-mount.17a9b8c9d0e1f2g5",
+        "namespace": "kube-system",
+        "creationTimestamp": "2025-01-24T06:25:30Z"
+      },
+      "firstTimestamp": "2025-01-24T06:25:30Z",
+      "lastTimestamp": "2025-01-24T06:25:30Z",
+      "count": 1,
+      "reason": "FailedMount",
+      "message": "MountVolume.SetUp failed for volume \"config-volume\" : configmap \"missing-config\" not found",
+      "type": "Warning",
+      "source": {
+        "component": "kubelet",
+        "host": "node-2"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "kube-system",
+        "name": "system-pod-456",
+        "uid": "660f9511-f3ac-52e5-b827-557766551111",
+        "apiVersion": "v1",
+        "resourceVersion": "12300"
+      }
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "deployment-scaled.17a9b8c9d0e1f2g6",
+        "namespace": "production",
+        "creationTimestamp": "2025-01-24T06:20:15Z"
+      },
+      "firstTimestamp": "2025-01-24T06:20:15Z",
+      "lastTimestamp": "2025-01-24T06:20:15Z",
+      "count": 1,
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set web-app-84d7c9f8b to 5",
+      "type": "Normal",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "production",
+        "name": "web-app",
+        "uid": "770fa622-04bd-63f6-c938-668877662222",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "12250"
+      }
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "node-ready.17a9b8c9d0e1f2g7",
+        "namespace": "",
+        "creationTimestamp": "2025-01-24T06:15:00Z"
+      },
+      "firstTimestamp": "2025-01-24T06:15:00Z",
+      "lastTimestamp": "2025-01-24T06:15:00Z",
+      "count": 1,
+      "reason": "NodeReady",
+      "message": "Node node-3 status is now: NodeReady",
+      "type": "Normal",
+      "source": {
+        "component": "node-controller"
+      },
+      "involvedObject": {
+        "kind": "Node",
+        "name": "node-3",
+        "uid": "880gb733-15ce-74g7-d049-779988773333",
+        "apiVersion": "v1",
+        "resourceVersion": "12200"
+      }
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "pod-pull-error.17a9b8c9d0e1f2g8",
+        "namespace": "development",
+        "creationTimestamp": "2025-01-24T06:10:45Z"
+      },
+      "firstTimestamp": "2025-01-24T06:10:45Z",
+      "lastTimestamp": "2025-01-24T06:10:45Z",
+      "count": 1,
+      "reason": "ErrImagePull",
+      "message": "Failed to pull image \"nginx:invalid-tag\": rpc error: code = NotFound desc = manifest unknown",
+      "type": "Warning",
+      "source": {
+        "component": "kubelet",
+        "host": "node-1"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "development",
+        "name": "test-pod-789",
+        "uid": "990hc844-26df-85h8-e15a-88aa99884444",
+        "apiVersion": "v1",
+        "resourceVersion": "12150"
+      }
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "service-created.17a9b8c9d0e1f2g9",
+        "namespace": "default",
+        "creationTimestamp": "2025-01-24T06:05:20Z"
+      },
+      "firstTimestamp": "2025-01-24T06:05:20Z",
+      "lastTimestamp": "2025-01-24T06:05:20Z",
+      "count": 1,
+      "reason": "Created",
+      "message": "Service nginx-service created successfully",
+      "type": "Normal",
+      "source": {
+        "component": "service-controller"
+      },
+      "involvedObject": {
+        "kind": "Service",
+        "namespace": "default",
+        "name": "nginx-service",
+        "uid": "aa0id955-37eg-96i9-f26b-99bb00995555",
+        "apiVersion": "v1",
+        "resourceVersion": "12100"
+      }
+    },
+    {
+      "kind": "Event",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "pod-killed.17a9b8c9d0e1f2ga",
+        "namespace": "default",
+        "creationTimestamp": "2025-01-24T06:00:10Z"
+      },
+      "firstTimestamp": "2025-01-24T06:00:10Z",
+      "lastTimestamp": "2025-01-24T06:00:10Z",
+      "count": 1,
+      "reason": "Killing",
+      "message": "Stopping container nginx",
+      "type": "Normal",
+      "source": {
+        "component": "kubelet",
+        "host": "node-2"
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "default",
+        "name": "nginx-deployment-7c79c4bf97-old123",
+        "uid": "bb1je066-48fh-07ja-g37c-aaccbb006666",
+        "apiVersion": "v1",
+        "resourceVersion": "12050"
+      }
+    }
+  ]
+}

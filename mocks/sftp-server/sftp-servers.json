@@ -1,0 +1,266 @@
+{
+  "apiVersion": "aipub.ten1010.io/v1",
+  "items": [
+    {
+      "apiVersion": "aipub.ten1010.io/v1",
+      "kind": "FtpServer",
+      "metadata": {
+        "annotations": {
+          "aipubvolume.aipub.ten1010.io/mount-workloads": "jsh-volume",
+          "aipubvolume.aipub.ten1010.io/request": "{\"jsh-volume\":\"/home/aipub\"}"
+        },
+        "creationTimestamp": "2025-07-07T02:10:11Z",
+        "finalizers": ["sftpservers.aipub.ten1010.io/ingress-path-removal"],
+        "generation": 2,
+        "labels": {
+          "aipub.ten1010.io/userid": "f187eb07-8395-4e6f-9db6-9f9e090b5cf8",
+          "aipub.ten1010.io/username": "pmadmin2"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:aipubvolume.aipub.ten1010.io/request": {}
+                }
+              },
+              "f:spec": {
+                ".": {},
+                "f:publicKey": {
+                  ".": {},
+                  "f:value": {}
+                },
+                "f:volumeAndMounts": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-07T02:10:11Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"sftpservers.aipub.ten1010.io/ingress-path-removal\"": {}
+                }
+              },
+              "f:spec": {
+                "f:port": {}
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-07-07T02:10:12Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:address": {},
+                "f:availableCondition": {
+                  "f:status": {},
+                  "f:timestamp": {}
+                },
+                "f:event": {
+                  ".": {},
+                  "f:created": {},
+                  "f:updated": {}
+                },
+                "f:podName": {},
+                "f:serviceName": {}
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-10T01:32:29Z"
+          }
+        ],
+        "name": "hjw",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "pmadmin2",
+            "uid": "3a2a71d1-5ccd-4d77-80d3-32633fe67b3a"
+          }
+        ],
+        "resourceVersion": "46453887",
+        "uid": "c2fa17a4-0f7a-4343-b6e0-725070167e65"
+      },
+      "spec": {
+        "port": 3,
+        "publicKey": {
+          "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD30n0nL5sG9MLHq6445twOQkOyV6Px64/JS4Ew3kVxtsQRIdKGld1GKlytuVYPpwmZbV0PQ/aXm/GPyylx9qpVYRagwf+zqNvaw0aQvxHtfZ3MKT6gnp2Lj1/9+vTm/G697K6ixZDlr/yDmRglKQweeymYAQuDAZGXwTne+EUFvUV2KR5Ql9X/p+MOJJENK9yDbD87XsEfCDSp8Vt0fwoi6AiS9OmQmzUS5duZflziiHpa/ObnkEY1pLFHZz536Cu+95QlR1wd+J3WC6E6fA2QzjyUcN+gSEdaeTjbZpKkK8uXmxMNqO8cOBJY5QffNdpEji1Uf6Ll43GInbguOFyAm63jTWrWSNv+xscUk5kGriEIXnmFJA6x9Dzl5ZfwNRJFIWtsX+v/4kRCgmBCnZ9EN7E6VappPsexOqAld3LTNeMgLKLIU68EZFm/VZd3JpZb8rH4pKUNAQjOAWKTND7SwFqdAHEDAs6XX6yP6ARviSEvjvdY39lUgW+WI6xcK3s= jungw@LAPTOP-HVOS77G4"
+        },
+        "volumeAndMounts": [
+          {
+            "mountPath": "/home/aipub",
+            "persistentVolumeClaim": {
+              "claimName": "jsh-volume-e2911fc4"
+            }
+          }
+        ]
+      },
+      "status": {
+        "address": "101.202.0.12:3",
+        "availableCondition": {
+          "status": true,
+          "timestamp": "2025-07-10T01:32:29.715474"
+        },
+        "event": {
+          "created": "hjw.create.c2fa17a4-0f7a-4343-b6e0-725070167e65",
+          "updated": "hjw.update.1752111149"
+        },
+        "podName": "hjw-c2fa17a4",
+        "serviceName": "hjw-c2fa17a4"
+      }
+    },
+    {
+      "apiVersion": "aipub.ten1010.io/v1",
+      "kind": "FtpServer",
+      "metadata": {
+        "annotations": {
+          "aipubvolume.aipub.ten1010.io/mount-workloads": "yshee-volume,jsh-volume",
+          "aipubvolume.aipub.ten1010.io/request": "{\"yshee-volume\":\"/mnt\",\"jsh-volume\":\"/mnt2\"}"
+        },
+        "creationTimestamp": "2025-06-04T12:00:19Z",
+        "finalizers": ["sftpservers.aipub.ten1010.io/ingress-path-removal"],
+        "generation": 5,
+        "labels": {
+          "aipub.ten1010.io/userid": "0c386825-465f-4cfc-bd19-953ee1993293",
+          "aipub.ten1010.io/username": "qaadmin"
+        },
+        "managedFields": [
+          {
+            "apiVersion": "aipub.ten1010.io/v1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:finalizers": {
+                  ".": {},
+                  "v:\"sftpservers.aipub.ten1010.io/ingress-path-removal\"": {}
+                }
+              },
+              "f:spec": {
+                "f:port": {}
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "time": "2025-06-04T12:00:20Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:aipubvolume.aipub.ten1010.io/request": {}
+                }
+              },
+              "f:spec": {
+                ".": {},
+                "f:publicKey": {
+                  ".": {},
+                  "f:value": {}
+                },
+                "f:volumeAndMounts": {}
+              }
+            },
+            "manager": "Mozilla",
+            "operation": "Update",
+            "time": "2025-07-02T12:04:01Z"
+          },
+          {
+            "apiVersion": "aipub.ten1010.io/v1",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:status": {
+                "f:address": {},
+                "f:availableCondition": {
+                  "f:status": {},
+                  "f:timestamp": {}
+                },
+                "f:event": {
+                  ".": {},
+                  "f:created": {},
+                  "f:updated": {}
+                },
+                "f:podName": {},
+                "f:serviceName": {}
+              }
+            },
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "subresource": "status",
+            "time": "2025-07-10T01:32:39Z"
+          }
+        ],
+        "name": "yshee-sftp",
+        "namespace": "proj1",
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "blockOwnerDeletion": false,
+            "controller": false,
+            "kind": "AipubUser",
+            "name": "qaadmin",
+            "uid": "6cbf9c41-5dd5-48cc-8ff9-24d6e9054e79"
+          }
+        ],
+        "resourceVersion": "46453942",
+        "uid": "044a2a2c-b65e-4625-a3b8-d134f4db74df"
+      },
+      "spec": {
+        "port": 1,
+        "publicKey": {
+          "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDgiUMCdPOpYhpxiMylR8jXczYvLx9WKItPyL6Cw2ZEfwcJuEiZktJp3fMd+1WAIAncFSE5dw+4QS+XiTtwbvXSm2NvmsUdrcqYTaykdoCdrqq+VcPEUxBGKQMieHw2+8q2/Q/qOgCkUqsBSaWXich0nkxfT9w80l1QNsSG5dToanZiH/2fvepR7S0QcAblPtcsnpB0lvsBzQgo4VpbqaR2M76nVYhqk/+avYMUrEAybkIvbX4fmCURd+RkRNG45/nWzWhB1eBuBpuMLXq95Y/4BmpkaoxAHtt5hn7pctVGO14gzy4UUvJ8DADAZDeTd48maWfSVweZTjOob97F2SsHECQ0APpFY3fJ0U7w0LUKUhi64INDLAi5xitnYbiWJ5J8OJNjNjd0cMUdUc7s9pK7K2DMvMoU00ZzvM6qejBpbM+QFqg/83aCzxzb4gAka9pfWWnClOmz6nD8YnGSdDLX5XxCjKp/p7TUSEQcbsyz2zd3i558A0nKWm0zkap1Nck= yuseunghui@yuseunghuiui-MacBookAir-2.local"
+        },
+        "volumeAndMounts": [
+          {
+            "mountPath": "/mnt",
+            "persistentVolumeClaim": {
+              "claimName": "yshee-volume-e129ddc6"
+            }
+          },
+          {
+            "mountPath": "/mnt2",
+            "persistentVolumeClaim": {
+              "claimName": "jsh-volume-e2911fc4"
+            }
+          }
+        ]
+      },
+      "status": {
+        "address": "101.202.0.12:1",
+        "availableCondition": {
+          "status": true,
+          "timestamp": "2025-07-10T01:32:39.334885"
+        },
+        "event": {
+          "created": "yshee-sftp.create.044a2a2c-b65e-4625-a3b8-d134f4db74df",
+          "updated": "yshee-sftp.update.1752111159"
+        },
+        "podName": "yshee-sftp-044a2a2c",
+        "serviceName": "yshee-sftp-044a2a2c"
+      }
+    }
+  ],
+  "kind": "FtpServerList",
+  "metadata": {
+    "continue": "",
+    "resourceVersion": "48712899"
+  }
+}

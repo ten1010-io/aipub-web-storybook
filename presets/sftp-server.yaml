@@ -1,0 +1,16 @@
+apiVersion: aipub.ten1010.io/v1
+kind: SFTPServer
+metadata:
+  name: #string
+  namespace: #string
+  annotations:
+    # key: value
+  labels:
+    # key: value
+spec:
+  publicKey:
+    value: #string
+  volumeAndMounts:
+    - mountPath: #string
+      persistentVolumeClaim:
+        claimName: #string

@@ -1,0 +1,2082 @@
+{
+  "kind": "NamespaceList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "48727590"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "abc",
+        "uid": "e83ad896-4bb9-4de4-ae83-88a2dba0ad6f",
+        "resourceVersion": "43099332",
+        "creationTimestamp": "2025-07-01T11:10:47Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "abc"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "abc",
+            "uid": "8fd5c756-b688-47d3-8d02-c0a6299ffa80",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-01T11:10:47Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"8fd5c756-b688-47d3-8d02-c0a6299ffa80\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "ai-helper",
+        "uid": "6beaf952-f8cd-4691-b791-291b425e46bd",
+        "resourceVersion": "45255469",
+        "creationTimestamp": "2025-07-07T04:49:37Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "ai-helper"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-07T04:49:37Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "aipub",
+        "uid": "5a79c3ab-a3cf-4492-890a-e97b33a38b8d",
+        "resourceVersion": "32448252",
+        "creationTimestamp": "2025-04-09T08:46:57Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "aipub"
+        },
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"name\":\"aipub\"}}\n"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:46:57Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          },
+          {
+            "manager": "kubectl-client-side-apply",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-05-29T12:27:00Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "aipub-easy",
+        "uid": "da8a7d3a-f56f-4396-adf1-42ad96e30a29",
+        "resourceVersion": "33501442",
+        "creationTimestamp": "2025-06-04T05:42:58Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "aipub-easy"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-04T05:42:58Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "aipub-tcp-port-validator",
+        "uid": "fedd7fdb-9de1-40bc-bcd4-f8cf75d65db3",
+        "resourceVersion": "37810532",
+        "creationTimestamp": "2025-06-16T07:30:44Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "aipub-tcp-port-validator",
+          "name": "aipub-tcp-port-validator"
+        },
+        "managedFields": [
+          {
+            "manager": "helm",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-16T07:30:44Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {},
+                  "f:name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "aipub-user-workspace-reclaim-controller",
+        "uid": "2ae44a1e-f01c-4c65-adc0-7be84c948951",
+        "resourceVersion": "41616628",
+        "creationTimestamp": "2025-06-27T02:19:53Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "aipub-user-workspace-reclaim-controller",
+          "name": "aipub-user-workspace-reclaim-controller"
+        },
+        "managedFields": [
+          {
+            "manager": "helm",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-27T02:19:53Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {},
+                  "f:name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "aipub-volume-controller",
+        "uid": "8c039646-6a16-45bf-96f0-d6c79c7833af",
+        "resourceVersion": "37840612",
+        "creationTimestamp": "2025-06-16T09:30:56Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "aipub-volume-controller",
+          "name": "aipub-volume-controller"
+        },
+        "managedFields": [
+          {
+            "manager": "helm",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-16T09:30:56Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {},
+                  "f:name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "aipub-workspace-controller",
+        "uid": "62076611-73e3-418c-8c05-cb12f7c9a311",
+        "resourceVersion": "34133735",
+        "creationTimestamp": "2025-06-05T09:20:55Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "aipub-workspace-controller",
+          "name": "aipub-workspace-controller"
+        },
+        "managedFields": [
+          {
+            "manager": "helm",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-05T09:20:55Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {},
+                  "f:name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "aws-pull-test",
+        "uid": "1f325c5a-673b-409e-af49-b09150f3f975",
+        "resourceVersion": "35347751",
+        "creationTimestamp": "2025-06-10T01:38:05Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "aws-pull-test"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-10T01:38:05Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "coaster",
+        "uid": "57c6e3cb-4dbf-42a4-91be-28e2928be132",
+        "resourceVersion": "1262116",
+        "creationTimestamp": "2025-04-17T11:00:17Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "coaster"
+        },
+        "managedFields": [
+          {
+            "manager": "OpenAPI-Generator",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-17T11:00:17Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "common",
+        "uid": "c2a1970d-d07b-4c96-9e83-53e4fb9c35e5",
+        "resourceVersion": "32541967",
+        "creationTimestamp": "2025-05-30T01:36:44Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "common"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "common",
+            "uid": "4db91933-9213-4701-afec-74216df03645",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-05-30T01:36:44Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"4db91933-9213-4701-afec-74216df03645\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "def",
+        "uid": "cf268237-416c-48c0-8b0d-4f5a6a7ed937",
+        "resourceVersion": "43272581",
+        "creationTimestamp": "2025-07-02T01:45:47Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "def"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "def",
+            "uid": "817688e1-fb7f-4fe1-a854-8e1976aa5391",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-02T01:45:47Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"817688e1-fb7f-4fe1-a854-8e1976aa5391\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "default",
+        "uid": "055c107e-8811-4732-8aad-40aae6ed1a6a",
+        "resourceVersion": "35803864",
+        "creationTimestamp": "2025-04-09T08:38:19Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "default"
+        },
+        "managedFields": [
+          {
+            "manager": "kube-apiserver",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:38:19Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "del-test",
+        "uid": "d9bbd97e-3b22-446c-9857-7e0fda011724",
+        "resourceVersion": "38511406",
+        "creationTimestamp": "2025-06-18T05:20:42Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "del-test"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "del-test",
+            "uid": "7155164c-4e85-4252-b5db-36105780d8e6",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-18T05:20:42Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"7155164c-4e85-4252-b5db-36105780d8e6\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "efk",
+        "uid": "7b0aa786-0c38-4c1a-a77e-fc83a2d7d4b7",
+        "resourceVersion": "32524726",
+        "creationTimestamp": "2025-05-29T23:17:12Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "efk"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-05-29T23:17:12Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "geunjae-test",
+        "uid": "ab403c4d-53d0-4dcc-a114-378a73c9608c",
+        "resourceVersion": "34086047",
+        "creationTimestamp": "2025-06-05T07:14:03Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "geunjae-test"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-05T07:14:03Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "haha",
+        "uid": "1e9933cf-9dca-4988-950f-5f85711f8890",
+        "resourceVersion": "46045929",
+        "creationTimestamp": "2025-07-09T01:32:22Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "haha"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "haha",
+            "uid": "6b3e5591-7cda-4129-8538-289efd84b436",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-09T01:32:22Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"6b3e5591-7cda-4129-8538-289efd84b436\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "harbor",
+        "uid": "32fe9d1b-a96e-453f-bb39-08d7f08bf1b3",
+        "resourceVersion": "3425",
+        "creationTimestamp": "2025-04-09T08:59:53Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "harbor",
+          "name": "harbor"
+        },
+        "managedFields": [
+          {
+            "manager": "helm",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:59:53Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {},
+                  "f:name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "hjw",
+        "uid": "f6b847fd-85e6-4077-84f0-33bc34faf929",
+        "resourceVersion": "294772",
+        "creationTimestamp": "2025-04-11T06:39:30Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "hjw"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-11T06:39:30Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "hjwhjw",
+        "uid": "17944867-5e9a-4904-a252-c73f969227ab",
+        "resourceVersion": "35482356",
+        "creationTimestamp": "2025-06-10T07:52:52Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "hjwhjw"
+        },
+        "annotations": {
+          "field.cattle.io/containerDefaultResourceLimit": "{}",
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"field.cattle.io/containerDefaultResourceLimit\":\"{}\"},\"labels\":{},\"name\":\"hjwhjw\"}}\n"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-client-side-apply",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-10T07:52:52Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:field.cattle.io/containerDefaultResourceLimit": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "ingress-nginx",
+        "uid": "85c19b41-decf-4cdb-9964-9fad85125ec9",
+        "resourceVersion": "872",
+        "creationTimestamp": "2025-04-09T08:39:35Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "ingress-nginx"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:39:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "k10s",
+        "uid": "5763c697-f17d-4426-b628-24e929a776a9",
+        "resourceVersion": "5234",
+        "creationTimestamp": "2025-04-09T09:10:24Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "k10s"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T09:10:24Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "keycloak",
+        "uid": "302316c5-44cb-48ab-b4d8-414e344bfc81",
+        "resourceVersion": "2647",
+        "creationTimestamp": "2025-04-09T08:54:48Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "keycloak"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:54:48Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "kube-flannel",
+        "uid": "599aa52a-ec25-40ed-87b5-d575953f16a1",
+        "resourceVersion": "487",
+        "creationTimestamp": "2025-04-09T08:38:48Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "kube-flannel",
+          "pod-security.kubernetes.io/enforce": "privileged"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:38:48Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          },
+          {
+            "manager": "kubectl-label",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:38:49Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  "f:pod-security.kubernetes.io/enforce": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "kube-node-lease",
+        "uid": "9a8771c8-37cd-4469-9251-1b9f3721edab",
+        "resourceVersion": "35",
+        "creationTimestamp": "2025-04-09T08:38:19Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "kube-node-lease"
+        },
+        "managedFields": [
+          {
+            "manager": "kube-apiserver",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:38:19Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "kube-public",
+        "uid": "1b66c901-90f9-4d39-bb2c-7271f27c24e1",
+        "resourceVersion": "32",
+        "creationTimestamp": "2025-04-09T08:38:19Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "kube-public"
+        },
+        "managedFields": [
+          {
+            "manager": "kube-apiserver",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:38:19Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "kube-system",
+        "uid": "1bd60cc3-03a2-4563-b7f0-437627e1e8f0",
+        "resourceVersion": "11",
+        "creationTimestamp": "2025-04-09T08:38:19Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "kube-system"
+        },
+        "managedFields": [
+          {
+            "manager": "kube-apiserver",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:38:19Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "linkerd",
+        "uid": "3367e52d-d3f2-4984-a2bf-db60dd2510d1",
+        "resourceVersion": "7673",
+        "creationTimestamp": "2025-04-09T09:25:16Z",
+        "labels": {
+          "config.linkerd.io/admission-webhooks": "disabled",
+          "kubernetes.io/metadata.name": "linkerd",
+          "linkerd.io/control-plane-ns": "linkerd",
+          "linkerd.io/is-control-plane": "true",
+          "pod-security.kubernetes.io/enforce": "privileged"
+        },
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"linkerd.io/inject\":\"disabled\"},\"labels\":{\"config.linkerd.io/admission-webhooks\":\"disabled\",\"linkerd.io/control-plane-ns\":\"linkerd\",\"linkerd.io/is-control-plane\":\"true\",\"pod-security.kubernetes.io/enforce\":\"privileged\"},\"name\":\"linkerd\"}}\n",
+          "linkerd.io/inject": "disabled"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-client-side-apply",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T09:25:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {},
+                  "f:linkerd.io/inject": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:config.linkerd.io/admission-webhooks": {},
+                  "f:kubernetes.io/metadata.name": {},
+                  "f:linkerd.io/control-plane-ns": {},
+                  "f:linkerd.io/is-control-plane": {},
+                  "f:pod-security.kubernetes.io/enforce": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "metallb",
+        "uid": "add83cff-aaba-4dbd-a80e-a099f0963e6e",
+        "resourceVersion": "596",
+        "creationTimestamp": "2025-04-09T08:38:58Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "metallb"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T08:38:58Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "po-docs",
+        "uid": "9b472cd4-986c-452b-85b1-393b83b1cc2d",
+        "resourceVersion": "45363693",
+        "creationTimestamp": "2025-07-07T10:46:51Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "po-docs"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "po-docs",
+            "uid": "243de583-3793-4a6c-a08b-e3b15d8e2fa4",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-07T10:46:51Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"243de583-3793-4a6c-a08b-e3b15d8e2fa4\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "prj-test",
+        "uid": "c5aa39b5-0690-4be5-a25c-98debe30ba25",
+        "resourceVersion": "38549349",
+        "creationTimestamp": "2025-06-18T07:43:34Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "prj-test"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "prj-test",
+            "uid": "89243dc7-cfa6-4fce-8514-c4e8e73345f5",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-18T07:43:34Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"89243dc7-cfa6-4fce-8514-c4e8e73345f5\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "proj-yunju-2",
+        "uid": "cd461a28-fce3-457a-b516-f4d65ce22b11",
+        "resourceVersion": "36186552",
+        "creationTimestamp": "2025-06-12T04:55:57Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "proj-yunju-2"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "proj-yunju-2",
+            "uid": "3db16de8-2f06-47d0-aa74-e29938b3b34d",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-12T04:55:57Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"3db16de8-2f06-47d0-aa74-e29938b3b34d\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "proj1",
+        "uid": "5b69d685-2640-4c2e-bc02-21940f202cc8",
+        "resourceVersion": "33159117",
+        "creationTimestamp": "2025-06-02T07:28:45Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "proj1"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "proj1",
+            "uid": "393af017-6d7d-4487-b78a-c058c0423914",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-02T07:28:44Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"393af017-6d7d-4487-b78a-c058c0423914\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "proj2",
+        "uid": "57e58546-ae09-426e-8ede-2dad5bde5e9f",
+        "resourceVersion": "33159126",
+        "creationTimestamp": "2025-06-02T07:28:45Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "proj2"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "proj2",
+            "uid": "79fa5ea8-83e9-4a27-b273-59fde84ac981",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-02T07:28:45Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"79fa5ea8-83e9-4a27-b273-59fde84ac981\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "project-controller",
+        "uid": "7fb573df-ae08-45e7-a9f9-07785ae10e56",
+        "resourceVersion": "32448255",
+        "creationTimestamp": "2025-05-29T12:27:00Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "project-controller"
+        },
+        "annotations": {
+          "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"name\":\"project-controller\"}}\n"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-client-side-apply",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-05-29T12:27:00Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:annotations": {
+                  ".": {},
+                  "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                },
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "prometheus",
+        "uid": "fa2165ed-625f-4251-95c1-a9e54b838f20",
+        "resourceVersion": "12829",
+        "creationTimestamp": "2025-04-09T10:07:40Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "prometheus"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T10:07:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "python",
+        "uid": "30330715-d035-4037-b02e-23672457702b",
+        "resourceVersion": "32423087",
+        "creationTimestamp": "2025-04-09T18:13:54Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "python"
+        },
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T18:13:54Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "qwer",
+        "uid": "2524b03d-8700-4f2c-a56e-7a710d1c23f7",
+        "resourceVersion": "43344031",
+        "creationTimestamp": "2025-07-02T07:39:59Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "qwer"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "qwer",
+            "uid": "c06c6c65-ac55-446f-9640-17db4a0782e3",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-02T07:39:59Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"c06c6c65-ac55-446f-9640-17db4a0782e3\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "qwerqwer",
+        "uid": "968cd956-77b3-4c54-871e-c26c9d0f40b5",
+        "resourceVersion": "46576859",
+        "creationTimestamp": "2025-07-10T08:32:31Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "qwerqwer"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "qwerqwer",
+            "uid": "89ddb1ac-4c1a-4969-b886-412e6955cb96",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-10T08:32:31Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"89ddb1ac-4c1a-4969-b886-412e6955cb96\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "rag-guide",
+        "uid": "e92ab7ad-32e5-4c4b-8700-565e9b516bc5",
+        "resourceVersion": "32423095",
+        "creationTimestamp": "2025-04-22T06:33:57Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "rag-guide"
+        },
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-22T06:33:57Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "seunghee-test",
+        "uid": "51ec0232-8b92-4660-a227-1bef500dbf48",
+        "resourceVersion": "34087213",
+        "creationTimestamp": "2025-06-05T07:17:07Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "seunghee-test"
+        },
+        "managedFields": [
+          {
+            "manager": "kubectl-create",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-05T07:17:07Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "ten-project",
+        "uid": "b8675522-76f8-40dd-9ed1-d497e9f73165",
+        "resourceVersion": "41301382",
+        "creationTimestamp": "2025-06-26T05:07:29Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "ten-project"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "ten-project",
+            "uid": "e13f46bb-515c-4932-98ee-449b41f01295",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-26T05:07:29Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"e13f46bb-515c-4932-98ee-449b41f01295\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "ten-project-001",
+        "uid": "cd022827-aaad-44a0-956f-0b3158d9731b",
+        "resourceVersion": "44075884",
+        "creationTimestamp": "2025-07-04T07:23:47Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "ten-project-001"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "ten-project-001",
+            "uid": "61f7c240-e9b8-4c3d-ba07-0ac7b0b66b00",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-04T07:23:47Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"61f7c240-e9b8-4c3d-ba07-0ac7b0b66b00\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "ten-project-sample",
+        "uid": "9ba16755-a6b5-4866-ad5f-dfbd17153d0c",
+        "resourceVersion": "46216488",
+        "creationTimestamp": "2025-07-09T11:14:57Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "ten-project-sample"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "ten-project-sample",
+            "uid": "b76c8c8f-f947-4219-a891-a8805abb3a6c",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-09T11:14:57Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"b76c8c8f-f947-4219-a891-a8805abb3a6c\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "test",
+        "uid": "3339dd69-2dbe-4f60-a809-62040582a436",
+        "resourceVersion": "33108625",
+        "creationTimestamp": "2025-06-02T00:39:22Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "test"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "test",
+            "uid": "4c2eb5ac-b7fa-46b0-b257-e08c04c8222b",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-02T00:39:22Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"4c2eb5ac-b7fa-46b0-b257-e08c04c8222b\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "test-0630-1",
+        "uid": "e89c37dc-8dfe-4c3b-adc6-8f707dc20785",
+        "resourceVersion": "42629086",
+        "creationTimestamp": "2025-06-30T01:55:35Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "test-0630-1"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "test-0630-1",
+            "uid": "af148787-efcf-4141-88e6-64a40c71e6f9",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-30T01:55:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"af148787-efcf-4141-88e6-64a40c71e6f9\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "test-ssh",
+        "uid": "f12b6765-85f1-4ed9-8166-9db07b48951f",
+        "resourceVersion": "38558740",
+        "creationTimestamp": "2025-06-18T08:17:18Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "test-ssh"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "test-ssh",
+            "uid": "6b2c3bb2-a3f0-4ba0-af84-ae4aa6127199",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-18T08:17:18Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"6b2c3bb2-a3f0-4ba0-af84-ae4aa6127199\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "trident",
+        "uid": "08e37738-aacf-4e9d-ac93-a3406b8025b4",
+        "resourceVersion": "4854",
+        "creationTimestamp": "2025-04-09T09:07:56Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "trident",
+          "name": "trident",
+          "pod-security.kubernetes.io/enforce": "privileged"
+        },
+        "managedFields": [
+          {
+            "manager": "helm",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T09:07:56Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {},
+                  "f:name": {}
+                }
+              }
+            }
+          },
+          {
+            "manager": "trident-operator",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-04-09T09:08:19Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  "f:pod-security.kubernetes.io/enforce": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "yshee-docs-test",
+        "uid": "3cd8757c-38eb-4cd7-95e7-c6c2f4874864",
+        "resourceVersion": "44525325",
+        "creationTimestamp": "2025-07-05T11:35:39Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "yshee-docs-test"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "yshee-docs-test",
+            "uid": "61c233b9-0f15-4a35-a6d6-62ddaec91e38",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-07-05T11:35:39Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"61c233b9-0f15-4a35-a6d6-62ddaec91e38\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    },
+    {
+      "metadata": {
+        "name": "yshee-test",
+        "uid": "8f49bb00-5d0b-4591-8285-45f2193ad849",
+        "resourceVersion": "41670170",
+        "creationTimestamp": "2025-06-27T06:00:11Z",
+        "labels": {
+          "kubernetes.io/metadata.name": "yshee-test"
+        },
+        "ownerReferences": [
+          {
+            "apiVersion": "project.aipub.ten1010.io/v1alpha1",
+            "kind": "Project",
+            "name": "yshee-test",
+            "uid": "85c8f7eb-4507-4d14-8b91-32a889ac9834",
+            "controller": true,
+            "blockOwnerDeletion": true
+          }
+        ],
+        "managedFields": [
+          {
+            "manager": "Kubernetes Java Client",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2025-06-27T06:00:11Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:metadata": {
+                "f:labels": {
+                  ".": {},
+                  "f:kubernetes.io/metadata.name": {}
+                },
+                "f:ownerReferences": {
+                  ".": {},
+                  "k:{\"uid\":\"85c8f7eb-4507-4d14-8b91-32a889ac9834\"}": {}
+                }
+              }
+            }
+          }
+        ]
+      },
+      "spec": {
+        "finalizers": ["kubernetes"]
+      },
+      "status": {
+        "phase": "Active"
+      }
+    }
+  ]
+}

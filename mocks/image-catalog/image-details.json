@@ -1,0 +1,340 @@
+{
+  "python": {
+    "name": "python",
+    "displayName": "Python",
+    "fullName": "base-catalog/python",
+    "category": "Language",
+    "summary": "Python 공식 이미지. 스크립트 실행과 애플리케이션 구동에 사용합니다.",
+    "descriptionHtml": "<h2>Python</h2><p>Python 공식 이미지. 스크립트 실행과 애플리케이션 구동에 사용합니다.</p><ul><li>maintained by Python Software Foundation</li><li>license: PSF</li></ul>",
+    "logoText": "PY",
+    "iconUrl": "/image-catalog/api/images/icon/python",
+    "latestTag": "3.12",
+    "latestPullReference": null,
+    "pullPrefix": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog",
+    "registryHost": "aipub-harbor.cluster10.idc1.ten1010.io",
+    "pullCount": 31,
+    "tagCount": 3,
+    "license": "PSF",
+    "publisher": "Python Software Foundation",
+    "updatedDate": "2026-06-11",
+    "versions": [
+      {
+        "tag": "3.12",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "100.5 MB",
+        "pushedDate": "2026-01-10T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/python:3.12"
+      },
+      {
+        "tag": "3.11",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000001",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "101.5 MB",
+        "pushedDate": "2026-01-11T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/python:3.11"
+      },
+      {
+        "tag": "3.10",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000002",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "102.5 MB",
+        "pushedDate": "2026-01-12T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/python:3.10"
+      }
+    ]
+  },
+  "pytorch/pytorch": {
+    "name": "pytorch/pytorch",
+    "displayName": "PyTorch",
+    "fullName": "base-catalog/pytorch/pytorch",
+    "category": "Deep Learning",
+    "summary": "딥러닝 연구·학습을 위한 PyTorch 공식 이미지. CUDA/cuDNN 런타임을 포함합니다.",
+    "descriptionHtml": "<h2>PyTorch</h2><p>딥러닝 연구·학습을 위한 PyTorch 공식 이미지. CUDA/cuDNN 런타임을 포함합니다.</p><ul><li>maintained by PyTorch Foundation</li><li>license: BSD-3-Clause</li></ul>",
+    "logoText": "PT",
+    "iconUrl": "",
+    "latestTag": "2.4.1-cuda12.4-cudnn9-runtime",
+    "latestPullReference": null,
+    "pullPrefix": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog",
+    "registryHost": "aipub-harbor.cluster10.idc1.ten1010.io",
+    "pullCount": 4,
+    "tagCount": 2,
+    "license": "BSD-3-Clause",
+    "publisher": "PyTorch Foundation",
+    "updatedDate": "2026-06-09",
+    "versions": [
+      {
+        "tag": "2.4.1-cuda12.4-cudnn9-runtime",
+        "digest": "sha256:000000000000000000000000000000000000000000000000000000000000000a",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "110.5 MB",
+        "pushedDate": "2026-02-10T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/pytorch/pytorch:2.4.1-cuda12.4-cudnn9-runtime"
+      },
+      {
+        "tag": "2.3.1-cuda12.1-cudnn8-runtime",
+        "digest": "sha256:000000000000000000000000000000000000000000000000000000000000000b",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "111.5 MB",
+        "pushedDate": "2026-02-11T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/pytorch/pytorch:2.3.1-cuda12.1-cudnn8-runtime"
+      }
+    ]
+  },
+  "lmsysorg/sglang": {
+    "name": "lmsysorg/sglang",
+    "displayName": "SGLang",
+    "fullName": "base-catalog/lmsysorg/sglang",
+    "category": "Deep Learning",
+    "summary": "LLM·VLM 고속 서빙 프레임워크 SGLang 공식 이미지.",
+    "descriptionHtml": "<h2>SGLang</h2><p>LLM·VLM 고속 서빙 프레임워크 SGLang 공식 이미지.</p><ul><li>maintained by LMSYS Org</li><li>license: Apache-2.0</li></ul>",
+    "logoText": "SG",
+    "iconUrl": "",
+    "latestTag": "v0.4.6",
+    "latestPullReference": null,
+    "pullPrefix": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog",
+    "registryHost": "aipub-harbor.cluster10.idc1.ten1010.io",
+    "pullCount": 12,
+    "tagCount": 2,
+    "license": "Apache-2.0",
+    "publisher": "LMSYS Org",
+    "updatedDate": "2026-06-08",
+    "versions": [
+      {
+        "tag": "v0.4.6",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000014",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "120.5 MB",
+        "pushedDate": "2026-03-10T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/lmsysorg/sglang:v0.4.6"
+      },
+      {
+        "tag": "v0.4.5",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000015",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "121.5 MB",
+        "pushedDate": "2026-03-11T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/lmsysorg/sglang:v0.4.5"
+      }
+    ]
+  },
+  "tensorflow/tensorflow": {
+    "name": "tensorflow/tensorflow",
+    "displayName": "TensorFlow",
+    "fullName": "base-catalog/tensorflow/tensorflow",
+    "category": "Deep Learning",
+    "summary": "TensorFlow 공식 이미지. GPU 런타임을 포함한 태그를 제공합니다.",
+    "descriptionHtml": "<h2>TensorFlow</h2><p>TensorFlow 공식 이미지. GPU 런타임을 포함한 태그를 제공합니다.</p><ul><li>maintained by Google</li><li>license: Apache-2.0</li></ul>",
+    "logoText": "TF",
+    "iconUrl": "",
+    "latestTag": "2.17.0-gpu",
+    "latestPullReference": null,
+    "pullPrefix": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog",
+    "registryHost": "aipub-harbor.cluster10.idc1.ten1010.io",
+    "pullCount": 9,
+    "tagCount": 2,
+    "license": "Apache-2.0",
+    "publisher": "Google",
+    "updatedDate": "2026-06-07",
+    "versions": [
+      {
+        "tag": "2.17.0-gpu",
+        "digest": "sha256:000000000000000000000000000000000000000000000000000000000000001e",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "130.5 MB",
+        "pushedDate": "2026-04-10T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/tensorflow/tensorflow:2.17.0-gpu"
+      },
+      {
+        "tag": "2.16.1",
+        "digest": "sha256:000000000000000000000000000000000000000000000000000000000000001f",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "131.5 MB",
+        "pushedDate": "2026-04-11T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/tensorflow/tensorflow:2.16.1"
+      }
+    ]
+  },
+  "huggingface/transformers-pytorch-gpu": {
+    "name": "huggingface/transformers-pytorch-gpu",
+    "displayName": "Transformers (PyTorch GPU)",
+    "fullName": "base-catalog/huggingface/transformers-pytorch-gpu",
+    "category": "Deep Learning",
+    "summary": "Hugging Face Transformers 의 PyTorch GPU 이미지. 사전학습 모델 추론에 사용합니다.",
+    "descriptionHtml": "<h2>Transformers (PyTorch GPU)</h2><p>Hugging Face Transformers 의 PyTorch GPU 이미지. 사전학습 모델 추론에 사용합니다.</p><ul><li>maintained by Hugging Face</li><li>license: Apache-2.0</li></ul>",
+    "logoText": "HF",
+    "iconUrl": "",
+    "latestTag": "4.44.0",
+    "latestPullReference": null,
+    "pullPrefix": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog",
+    "registryHost": "aipub-harbor.cluster10.idc1.ten1010.io",
+    "pullCount": 7,
+    "tagCount": 2,
+    "license": "Apache-2.0",
+    "publisher": "Hugging Face",
+    "updatedDate": "2026-06-06",
+    "versions": [
+      {
+        "tag": "4.44.0",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000028",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "140.5 MB",
+        "pushedDate": "2026-05-10T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/huggingface/transformers-pytorch-gpu:4.44.0"
+      },
+      {
+        "tag": "4.41.2",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000029",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "141.5 MB",
+        "pushedDate": "2026-05-11T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/huggingface/transformers-pytorch-gpu:4.41.2"
+      }
+    ]
+  },
+  "ubuntu": {
+    "name": "ubuntu",
+    "displayName": "Ubuntu",
+    "fullName": "base-catalog/ubuntu",
+    "category": "OS",
+    "summary": "범용 베이스 OS 이미지 Ubuntu.",
+    "descriptionHtml": null,
+    "logoText": "UB",
+    "iconUrl": "",
+    "latestTag": "24.04",
+    "latestPullReference": null,
+    "pullPrefix": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog",
+    "registryHost": "aipub-harbor.cluster10.idc1.ten1010.io",
+    "pullCount": 49,
+    "tagCount": 2,
+    "license": "MIT",
+    "publisher": "Canonical",
+    "updatedDate": "2026-06-05",
+    "versions": [
+      {
+        "tag": "24.04",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000032",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "150.5 MB",
+        "pushedDate": "2026-06-10T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/ubuntu:24.04"
+      },
+      {
+        "tag": "22.04",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000033",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "151.5 MB",
+        "pushedDate": "2026-06-11T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/ubuntu:22.04"
+      }
+    ]
+  },
+  "ubuntu/python": {
+    "name": "ubuntu/python",
+    "displayName": "Ubuntu Python",
+    "fullName": "base-catalog/ubuntu/python",
+    "category": "Language",
+    "summary": "Canonical 이 배포하는 Ubuntu 기반 Python 이미지.",
+    "descriptionHtml": "<h2>Ubuntu Python</h2><p>Canonical 이 배포하는 Ubuntu 기반 Python 이미지.</p><ul><li>maintained by Canonical</li><li>license: MIT</li></ul>",
+    "logoText": "UP",
+    "iconUrl": "",
+    "latestTag": "3.12-24.04",
+    "latestPullReference": null,
+    "pullPrefix": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog",
+    "registryHost": "aipub-harbor.cluster10.idc1.ten1010.io",
+    "pullCount": 5,
+    "tagCount": 2,
+    "license": "MIT",
+    "publisher": "Canonical",
+    "updatedDate": "2026-06-04",
+    "versions": [
+      {
+        "tag": "3.12-24.04",
+        "digest": "sha256:000000000000000000000000000000000000000000000000000000000000003c",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "160.5 MB",
+        "pushedDate": "2026-07-10T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/ubuntu/python:3.12-24.04"
+      },
+      {
+        "tag": "3.11-22.04",
+        "digest": "sha256:000000000000000000000000000000000000000000000000000000000000003d",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "161.5 MB",
+        "pushedDate": "2026-07-11T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/ubuntu/python:3.11-22.04"
+      }
+    ]
+  },
+  "vllm/vllm-openai": {
+    "name": "vllm/vllm-openai",
+    "displayName": "vllm/vllm-openai",
+    "fullName": "base-catalog/vllm/vllm-openai",
+    "category": "Deep Learning",
+    "summary": "고처리량 LLM 추론·서빙 엔진 vLLM의 공식 이미지. OpenAI 호환 API 서버를 바로 띄울 수 있습니다.",
+    "descriptionHtml": "<h2>vllm/vllm-openai</h2><p>고처리량 LLM 추론·서빙 엔진 vLLM의 공식 이미지. OpenAI 호환 API 서버를 바로 띄울 수 있습니다.</p><ul><li>maintained by vLLM</li><li>license: Apache-2.0</li></ul>",
+    "logoText": "VL",
+    "iconUrl": "",
+    "latestTag": "v0.8.4",
+    "latestPullReference": null,
+    "pullPrefix": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog",
+    "registryHost": "aipub-harbor.cluster10.idc1.ten1010.io",
+    "pullCount": 17,
+    "tagCount": 2,
+    "license": "Apache-2.0",
+    "publisher": "vLLM",
+    "updatedDate": "2026-06-10",
+    "versions": [
+      {
+        "tag": "v0.8.4",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000046",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "170.5 MB",
+        "pushedDate": "2026-08-10T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/vllm/vllm-openai:v0.8.4"
+      },
+      {
+        "tag": "v0.7.3",
+        "digest": "sha256:0000000000000000000000000000000000000000000000000000000000000047",
+        "shortDigest": "000000000000",
+        "os": "linux",
+        "arch": "amd64",
+        "sizeHuman": "171.5 MB",
+        "pushedDate": "2026-08-11T03:04:05Z",
+        "pullReference": "aipub-harbor.cluster10.idc1.ten1010.io/base-catalog/vllm/vllm-openai:v0.7.3"
+      }
+    ]
+  }
+}
